@@ -1,0 +1,3 @@
+[10-Mar-2017 13:50:03 UTC] PHP Fatal error:  Call to undefined method report::views() in /home/crmkhepr/public_html/mooga.com/report/index.php on line 257
+[10-Mar-2017 13:50:16 UTC] PHP Fatal error:  Call to undefined method report::views() in /home/crmkhepr/public_html/mooga.com/report/report.php on line 257
+[11-Apr-2017 10:46:08 UTC] PHP Fatal error:  Call to a member function fetch_object() on boolean in /home/crmkhepr/public_html/mooga.com/model/report.class.php on line 168

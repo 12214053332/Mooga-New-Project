@@ -1,0 +1,331 @@
+.error {
+    color: red;
+    font-size: 10px;
+}
+span#agree-error {
+    margin-right: 50px;
+}
+.panel.panel-danger,.panel.panel-success,.alert-box.error,.alert-box.success{
+    position: fixed;
+    top: 0;
+	left:42%;
+    z-index: 9999999999999999999999;
+    width: 350px;
+	height:35px;
+	margin:0;
+	
+}
+
+span.asterisc {
+    font-family: monospace;
+    color: #ec0f0f;
+}
+
+.hi25 {
+    padding: 0 !important;
+    height: 28px !important;
+}
+
+p.md-font.text-right.grey-font.zero-bottom-margin.sm-top-padding {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+p.md-lg-font.black-font.zero-bottom-margin {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.label{
+	line-height:4 !important; 
+}
+
+a.btn.blue-button {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#closedescriptionsection {
+ display:none;
+}
+
+.label
+{
+	    font-size: 100% !important;
+}
+
+
+span {
+    font-size: 14px;
+}
+.msg-thread {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-top: 1px solid #9b9b9b !important;
+}
+
+p.md-font.grey-font.zero-bottom-margin {
+    white-space: normal;
+    word-break: break-word;
+}
+
+.artical p {
+    line-height: 30px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+img.articals {
+    height: 60px;
+}
+
+.img-message {
+    height: 100px;
+}
+
+p.grey-font.md-font.text-right {
+    word-wrap: break-word;
+}
+.md-font {
+    font-size: .95em;
+}
+
+p.grey-font.md-font {
+    word-break: break-word;
+}
+
+
+p.md-font.grey-font.home.text-right {
+    word-wrap: break-word;
+}
+
+div.grey-font.md-font.home.text-right {
+    word-wrap: break-word;
+    height: 150px;
+}
+
+div.grey-font.md-font.home {
+    word-wrap: break-word;
+    height: 245px;
+}
+
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 100% !important;
+}
+
+.chosen-container-multi .chosen-choices
+{
+	    z-index: 1;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 3px;
+	    border: 1px solid #ccc;
+}
+.home-sider-img
+{
+	height:200px;
+}
+
+.home-header{
+	    font-size: 23px;
+}
+
+.slider-padding {
+    padding: 2px 24px;
+    text-align: justify center;
+}
+
+
+.home-artical {
+    height: 150px;
+}
+
+.sm-font {
+   ** font-size: 1.3em !important;
+}
+
+.carousel.slide.cust
+{
+	width:100% !important;
+}
+
+.cst-cap {
+    top: 25px !important;
+}
+.home-closeproject{
+	height:130px;
+}
+
+.home-opportunities{
+	height:150px;
+}
+
+.about-us {
+    padding: 10px 176px;
+    line-height: 35px;
+}
+
+p.black-font.sm-font.text-right.bold {
+    word-wrap: break-word;
+}
+
+
+/* spinner */
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+ 
+@-webkit-keyframes spinner {
+    to {-webkit-transform: rotate(360deg);}
+}
+ 
+.spinner {
+    min-width: 30px;
+    min-height: 30px;
+	    display: block;
+    position: relative;
+}
+ 
+.spinner:before {
+    content: 'Loading…';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-top: -13px;
+    margin-left: -13px;
+}
+ 
+.spinner:not(:required):before {
+    content: '';
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    border-top-color: #03ade0;
+    animation: spinner .6s linear infinite;
+    -webkit-animation: spinner .6s linear infinite;
+}
+/* spinner */
+
+h3#no-result-found {
+    text-align: center;
+}
+
+p {
+    margin: 0 3px 10px !important;
+}
+
+.notification {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: block;
+    width: 25px;
+    height: 25px;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 30px;
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 24px;
+}
+
+.lock-cust{
+    width: 20px;
+    height: 27px;
+    background: url("img/sprite.png");
+    display: block;
+    float: right;
+    background-position: -125px -112px;
+    margin-top: -4px;
+    margin-left: 6px;
+    margin-bottom: 0;
+}
+
+.user-cust{
+    width: 20px;
+    height: 27px;
+    background: url("img/sprite.png");
+    display: block;
+    float: right;
+    background-position: -44px -112px;
+    margin-top: -4px;
+    margin-left: 6px;
+    margin-bottom: 0;
+}
+
+.logout-cust{
+    width: 20px;
+    height: 27px;
+    background: url("img/sprite.png");
+    display: block;
+    float: right;
+    background-position: -81px -112px;
+    margin-top: -4px;
+    margin-left: 6px;
+    margin-bottom: 0;
+}
+
+.alert-box.error, .alert-box.success
+{
+	font-family: 'Al-Jazeera-Arabic-Regular';
+
+	font-size:14px !important;
+}
+
+.green-tick {
+
+    margin-right: -20px;
+    margin-left: 5px;
+}
+
+.small-font
+{
+	font-size:11px;
+	margin:0px auto !important;
+}
+.country{
+	    margin-top: 10px;
+}
+
+.person.person-4 {
+    background-position: 88px -1px;
+}
+
+.person.person-5 {
+    background-position: 88px -66px;
+}
+
+.show-phone.margin-right {
+    margin-right: 26px !important; 
+}
+
+
+
+/*responsive*/
+@media (max-width: 500px) {
+.border-btn {
+    margin: 0px 117px -25px 0px;
+    position: relative;
+}
+.negative-top {
+    margin-top: -82px;
+}
+/*responsive*/
+
+div#code {
+    position: absolute;
+    left: 8px;
+    margin-top: 4px;
+}
+
+

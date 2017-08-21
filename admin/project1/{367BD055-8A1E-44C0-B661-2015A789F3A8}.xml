@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<configuration date="2016/10/20" author="e.World Technology Ltd.">
+<project id="{367BD055-8A1E-44C0-B661-2015A789F3A8}" file="C:\Users\Omar Bakry\Desktop\project1.pmp" name="project1" product="PHPMaker" version="12.0" datetime="2016/10/20 11:47:50" languagefolder="phplang" userlevel="-2,&quot;Anonymous&quot;,0;">
+<table id="agent_field" name="agent_field" caption="agent field" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="articles" name="articles" caption="articles" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="articles_category" name="articles_category" caption="articles category" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="author" name="author" caption="author" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="consultation_field" name="consultation_field" caption="consultation field" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="country" name="country" caption="country" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="country_copy" name="country_copy" caption="country copy" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="fileds" name="fileds" caption="fileds" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="inbox_msg" name="inbox_msg" caption="inbox msg" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="opportunities" name="opportunities" caption="opportunities" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="products" name="products" caption="products" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="products_field" name="products_field" caption="products field" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="project_field" name="project_field" caption="project field" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="project_stage" name="project_stage" caption="project stage" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="project_type" name="project_type" caption="project type" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="projects" name="projects" caption="projects" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="services" name="services" caption="services" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="userdetails" name="userdetails" caption="userdetails" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="users" name="users" caption="users" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+<table id="users4" name="users4" caption="users 4" userlevel="-2,&quot;Anonymous&quot;,0;" priv="1"/>
+</project></configuration>

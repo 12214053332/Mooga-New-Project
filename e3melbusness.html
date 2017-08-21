@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyD9WKo1BWN9paLWtOB8qQFDY4Tu2SAjyNs",
+            authDomain: "academy-2ec85.firebaseapp.com",
+            databaseURL: "https://academy-2ec85.firebaseio.com",
+            projectId: "academy-2ec85",
+            storageBucket: "academy-2ec85.appspot.com",
+            messagingSenderId: "991133136964"
+        };
+        firebase.initializeApp(config);
+        function SendToken(token){
+            var xmlHttp = new XMLHttpRequest();
+            var data=new FormData();
+            data.append('token',token)
+            xmlHttp.open( "POST", "http://localhost/firebasemessages/saveToken.php", false ); // false for synchronous request
+            xmlHttp.send(data);
+        }
+        const messaging =firebase.messaging();
+        messaging.requestPermission()
+                .then(function(){
+                    console.log('Have Permission');
+                    return messaging.getToken();
+                }).then(function(token){
+            console.log(token)
+            SendToken(token);
+        }).catch(function(err){
+            console.log('Error Occured'+err);
+        });
+        messaging.onMessage(function(payload){
+            //console.log(payload.notification);
+            //console.log(payload.notification)
+            var notification = new Notification(payload.notification.title, {
+                icon: payload.notification.icon,
+                body: payload.notification.body,
+            });
+            notification.onclick = function () {
+                window.open(payload.notification.click_action);
+            };
+        });
+
+    </script>
+</head>
+<body>
+</body>
+</html>

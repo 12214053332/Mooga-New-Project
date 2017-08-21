@@ -1,0 +1,191 @@
+<?php
+
+Class _usersactionController Extends baseController {
+
+    public function index() {
+		
+		/*no post found*/
+		//if (!isset($_POST['email'])) {echo 0 ;return;}
+		/*no post found*/
+        //check for login type		
+		/*$login_type=$this->registry->sessionhandler->get('login_type');
+		  if ($login_type=='facebook'){
+			  self::facebook_register();
+		  }else if ($login_type=='linkedin')
+		  {
+			  self::linkedin_register();
+		  }else
+		  {
+			  self::normal_register();
+		  }*/
+	}
+	
+    public function signup() {
+		
+		/*no post found*/
+		//if (!isset($_POST['email'])) {echo 0 ;return;}
+		/*no post found*/
+        //check for login type	
+		
+		$login_type=$this->registry->sessionhandler->get('login_type');
+		  if ($login_type=='facebook'){
+			  self::facebook_register();
+		  }else if ($login_type=='linkedin')
+		  {
+			  self::linkedin_register();
+		  }else
+		  {
+			
+			  self::normal_register();
+		  }
+	}
+	
+	public  function login()
+	{
+		$login_type=$this->registry->sessionhandler->get('login_type');
+		  if ($login_type=='facebook'){
+			  self::facebook_register();
+		  }else if ($login_type=='linkedin')
+		  {
+			  self::linkedin_register();
+		  }else
+		  {
+			  self::normal_login();
+		  }
+	}
+
+
+
+/*other function*/	
+	function facebook_register()
+	{
+			    	$parameters_db=array();
+			$login_type=$this->registry->sessionhandler->get('login_type');
+			$fbid=$this->registry->sessionhandler->get('FBID');
+		  $fbid=$fbid.'@facebook.com';
+		  $parameters=$this->registry->objects->register();
+		  foreach ($parameters as $parameter) {
+          //  echo $parameter;
+            //return;
+            $json = json_decode($parameter);
+
+            $key = $json->name;
+            $$key =$this->registry->sessionhandler->get($key);//post($key);
+			if ($key=="email")
+			{
+				if ($$key=="")
+				{
+					$$key= $fbid;
+				}
+			}
+			//echo $json->type . "  " . $key . " = " . $$key . ';<br>';
+            if ($$key == "") {
+               
+            } else {
+                $data['name'] = $key;
+                $data['value'] = $$key;
+                $data['type'] = $json->type;
+                $jsondb = json_encode($data);
+                array_push($parameters_db, $jsondb);
+            }
+        }
+		
+	$id=	$this->registry->users->adduser($parameters_db);
+			$message="";
+		if ($id>0)
+		{
+			$message="شكرا لتسجيلك فى موقع موجة";
+		}
+			else
+		{
+			$message="أنت مسجل من قبل شكرا لك";
+		}
+		$this->registry->template->message =$message;
+	}
+	
+	
+	function linkedin_register()
+	{
+			echo 'linkedin_register';
+	}
+      
+    
+	function normal_register()
+	{
+		
+		
+		$parameters_db=array();
+		  $parameters=$this->registry->objects->register();
+		  foreach ($parameters as $parameter) {
+          //  echo $parameter;
+            //return;
+            $json = json_decode($parameter);
+
+            $key = $json->name;
+            $$key =post($key);
+			//echo $json->type . "  " . $key . " = " . $$key . ';<br>';
+            if ($$key == "") {
+                if (isset($json->requier)) {
+                    echo "filed  $key  requier";
+                    $isuccess = FALSE;
+                    // return ;
+                }
+            } else {
+                $data['name'] = $key;
+                $data['value'] = $$key;
+                $data['type'] = $json->type;
+                $jsondb = json_encode($data);
+                array_push($parameters_db, $jsondb);
+            }
+        }
+		
+	$id=	$this->registry->users->adduser($parameters_db);
+		//echo $id;
+	}
+
+
+
+  function normal_login()
+	{
+		  $parameters_db=array();
+		  $parameters=$this->registry->objects->login();
+		
+		foreach ($parameters as $parameter) {
+          //  echo $parameter;
+            //return;
+            $json = json_decode($parameter);
+
+            $key = $json->name;
+            $$key =post($key);
+			//echo $json->type . "  " . $key . " = " . $$key . ';<br>';
+            if ($$key == "") {
+                if (isset($json->requier)) {
+                    echo "filed  $key  requier";
+                    $isuccess = FALSE;
+                    // return ;
+                }
+            } else {
+                $data['name'] = $key;
+                $data['value'] = $$key;
+                $data['type'] = $json->type;
+                $jsondb = json_encode($data);
+                array_push($parameters_db, $jsondb);
+            }
+        }
+		
+		
+	$id=	$this->registry->users->loginuser($email,$password);
+	$decoded_id=$this->registry->encryption->encode($id);
+	
+	$this->registry->sessionhandler->put( $this->registry->useridstr,$decoded_id);
+	echo $id;
+	
+	
+//	echo $this->registry->sessionhandler->get( $this->registry->useridstr);
+			//echo 'normal_register';
+	}
+
+
+}
+
+?>
