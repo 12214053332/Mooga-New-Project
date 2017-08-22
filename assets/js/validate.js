@@ -564,6 +564,7 @@ $().ready(function() {
 
 $().ready(function() {
 	// validate the form when it is submitted
+
 	var validator = $("#allprojects-form").validate({
 		errorPlacement: function(error, element) {
 			// Append error within linked label

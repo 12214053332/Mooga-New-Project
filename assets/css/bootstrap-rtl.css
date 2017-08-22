@@ -7,5 +7,8 @@
 .about-heading-title,html,body{
 direction: rtl ;
 }
+.listing-boxes-text .phone{
+  direction: ltr;
+}
 
 

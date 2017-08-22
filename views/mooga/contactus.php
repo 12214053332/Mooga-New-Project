@@ -27,7 +27,7 @@
           <form class="contactus-form form-float form-alt" id="contactus-form" action="#" method="post">
             <div class="row">
               <div class="form-group col-xs-12 col-sm-6">
-                <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid" name="type" id="type">
+                <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" name="type" id="type">
                   <option value="">--اختر الغرض--</option>
                   <option value="أستفسار">أستفسار</option>
                   <option value="مقترح">مقترح</option>

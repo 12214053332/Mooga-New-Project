@@ -1,4 +1,4 @@
-<option value="">اختر</option>
+<option value=""></option>
   <?php
  
  $selected="";
