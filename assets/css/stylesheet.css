@@ -34,7 +34,7 @@ Table Of  Content
 ---------------------------------------------- */
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	font-size: 15px;
 	position: relative;
 	-webkit-transition: left .5s ease-out;
@@ -198,7 +198,7 @@ option {
 	display: inline-block;
 }
 #nav_menu_list ul li a {
-	font-family: cocon,'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #262626;
 	font-size: 19px;
 	text-transform: uppercase;
@@ -225,7 +225,7 @@ option {
 	background: transparent;
 }
 #nav_menu_list span.btn_item button.btn_login, #nav_menu_list span.btn_item button.btn_register {
-	font-family: cocon,'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: transparent linear-gradient(to right, #262626 50%, #ffce10 50%) repeat scroll right bottom / 207% 100%;
 	border: 0 none;
 	border-radius: 4px;
@@ -283,7 +283,7 @@ option {
 	width: 100%;
 }
 form#categorie-search-form h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	margin-bottom: 20px;
 	font-size: 26px;
 	letter-spacing: 0.5px;
@@ -301,7 +301,7 @@ input.form-control {
 	box-shadow: 3px 4px 8px rgba(0, 0, 0, 0.14) inset;
 }
 #search-input .form-control {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	height: 50px;
 	border: none;
 	font-size: 15px;
@@ -313,7 +313,7 @@ input.form-control {
 	appearance: none;
 }
 #search-input select.form-control {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-right: 1px solid #c2c2c2;
@@ -328,7 +328,7 @@ input.form-control {
 	color: #c2c2c2;
 }
 #location-search-btn button {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: -webkit-linear-gradient(left, #ffffff 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	background: linear-gradient(to right, #ffffff 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	color: #01273a;
@@ -402,7 +402,7 @@ input.form-control {
 	margin-bottom: 30px;
 }
 .vfx-search-categorie-title h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -434,7 +434,7 @@ input.form-control {
 	padding: 7px 15px;
 }
 #vfx-search-box select.form-control {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 	border-right: 1px solid #c2c2c2;
@@ -445,7 +445,7 @@ input.form-control {
 	border: 1px solid #b4b4b4;
 }
 #vfx-search-box input.form-control {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	border-top-left-radius: 0px;
 	border-bottom-left-radius: 0px;
 	padding-left: 15px;
@@ -455,7 +455,7 @@ input.form-control {
 	border-left: 0px;
 }
 #vfx-search-btn button {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: -webkit-linear-gradient(left, #01273a 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	background: linear-gradient(to right, #01273a 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	color: #01273a;
@@ -511,7 +511,7 @@ input.form-control {
 	padding-top: 100px;
 }
 #home-slider-item span.helpyou_item {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffffff;
 	margin-bottom: 20px;
 	font-size: 36px;
@@ -526,7 +526,7 @@ input.form-control {
 	color: #ffce10;
 }
 #home-slider-item h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	font-size: 54px;
 	color: #ffffff;
 	margin: 0px;
@@ -538,7 +538,7 @@ input.form-control {
 	color: #ffce10;
 }
 #home-slider-item p {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	font-size: 26px;
 	color: #ffffff;
 	margin: 20px 0px 0px;
@@ -614,7 +614,7 @@ input.form-control {
 	margin-bottom: 50px;
 }
 .categories-heading h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -670,7 +670,7 @@ input.form-control {
 	text-transform: uppercase;
 }
 .cate_item_block h1 a {
-	font-family:"Raleway",sans-serif;
+	font-family:'cocon',"Raleway",sans-serif;
 	color: #4a4a4a;
 	font-weight:600;
 }
@@ -792,7 +792,7 @@ transform:scale(1.5)
 	margin-bottom: 50px;
 }
 .all-categorie-list-title h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -855,7 +855,7 @@ transform:scale(1.5)
 	border-bottom: 0px;
 }
 .categories-list ul li a {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #696969;
 	font-size: 13px;
 	font-weight: 600;
@@ -873,7 +873,7 @@ transform:scale(1.5)
 	margin-right: 5px;
 }
 .categories-list ul li span {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #898989;
 	font-weight:600;
 	font-size:13px;
@@ -970,7 +970,7 @@ transform:scale(1.5)
 	margin-bottom: 50px;
 }
 .feature-item-listing-heading h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -1037,7 +1037,7 @@ transform:scale(1.5)
 	margin-bottom: 30px;
 }
 .feature-item-container-box .feature-title-item h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: rgba(1, 39, 58, 0.8);
 	color: #ffce10;
 	font-size: 13px;
@@ -1120,7 +1120,7 @@ transform:scale(1.5)
 	position: relative;
 }
 .feature-item-container-box .feature-item-location h2 {
-	font-family:"Open Sans",sans-serif;
+	font-family:'cocon',"Open Sans",sans-serif;
 	font-size: 14px;
 	color: #4a4a4a;
 	font-weight: 600;
@@ -1152,7 +1152,7 @@ transform:scale(1.5)
 	margin-bottom:7px;
 }
 .feature-item-container-box .feature-box-text h3 a{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #4a4a4a;
 	font-weight: 700;
 	font-size: 16px;
@@ -1168,7 +1168,7 @@ transform:scale(1.5)
 	letter-spacing:0.4px;	
 }
 .feature-item-container-box .feature-box-text a {
-	font-family:"Open Sans",sans-serif;
+	font-family:'cocon',"Open Sans",sans-serif;
 	color: #ffce10;
 	font-size: 13px;
 	font-weight: 600;
@@ -1368,7 +1368,7 @@ transform:scale(1.5)
 	margin-bottom: 50px;
 }
 .recent-item-listing-heading h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -1495,7 +1495,7 @@ transform:scale(1.5)
 	-ms-transition: all 0.3s ease 0s;
 }
 .recent-listing-box-image h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: rgba(1, 39, 58, 0.8) none repeat scroll 0 0;
 	color: #ffce10;
 	font-size: 13px;
@@ -1511,12 +1511,12 @@ transform:scale(1.5)
 }
 .recent-listing-box-item {
 	background-color: #ffffff;
-	text-align: left;
+	text-align: right;
 	position: relative;
 }
 .listing-boxes-text {
 	padding: 15px;
-	text-align: left;
+	text-align: right;
 }
 .recent-listing-box-item .recent-feature-item-rating {
 	background: #f4f4f4;
@@ -1530,17 +1530,17 @@ transform:scale(1.5)
 	bottom: 0px;
 }
 .recent-feature-item-rating h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #4a4a4a;
-	float: left;
+	float: right;
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 30px;
 	margin: 0;
-	text-align: left;
+	text-align: right;
 }
 .recent-feature-item-rating span {
-	float: right;
+	float: left;
 	font-size: 13px;
 	position: relative;
 	top: 7px;
@@ -1549,7 +1549,7 @@ transform:scale(1.5)
 	color: #ffcc58;
 }
 .listing-boxes-text a h3 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #4a4a4a;	
 	font-size: 16px;
 	font-weight:700;
@@ -1571,7 +1571,7 @@ transform:scale(1.5)
 	letter-spacing:0.3px;
 }
 .listing-boxes-text a {
-	font-family: 'Open Sans', sans-serif;	
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffce10;
 	font-size: 13px;
 	font-weight: 600;
@@ -1601,7 +1601,7 @@ transform:scale(1.5)
 	margin-bottom: 30px;
 }
 .vfx-item-counter-up .count_number {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #4a4a4a;
 	font-size: 50px;
 	line-height: 60px;
@@ -1609,7 +1609,7 @@ transform:scale(1.5)
 	margin-top: 5px;
 }
 .vfx-item-counter-up .counter_text {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	color: #696969;
 	font-size: 16px;
 	font-weight: 600;
@@ -1637,7 +1637,7 @@ transform:scale(1.5)
 	margin-bottom: 50px;
 }
 .pricing-heading-title h1 {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -1672,7 +1672,7 @@ transform:scale(1.5)
 	transition: all .5s ease-in-out 0;
 }
 .price-table-feature-block h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	margin: 0px;
 	color: #4a4a4a;
 	font-size: 18px;
@@ -1757,7 +1757,7 @@ transform:scale(1.5)
 	display: inline-block;
 }
 .vfx-price-btn button.purchase-btn {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: -webkit-linear-gradient(left, #262626 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	background: linear-gradient(to right, #262626 50%, #ffce10 50%) repeat scroll right bottom/207% 100% transparent;
 	color: #ffffff;
@@ -1808,9 +1808,9 @@ transform:scale(1.5)
 	color: #ffce10;
 	cursor: pointer;
 	display: inline-table;
-	float: right;
+	float: left;
 	position: absolute;
-	right: 15px;
+	left: 15px;
 	top: 17px;
 	z-index: 0;
 }
@@ -1835,11 +1835,11 @@ a.list-group-item:hover {
 	border-color: #ddd !important
 }
 .list-group a.list-group-item span {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: #ffce10;
 	border-radius: 30px;
 	color: #fff;
-	float: right;
+	float: left;
 	font-weight:600;
 	font-size: 11px;
 	height: 28px;
@@ -1880,7 +1880,7 @@ a.list-group-item.active span {
 	font-size: 16px;
 	font-weight: 600;
 	padding: 15px;
-	text-align: left;
+	text-align: right;
 	letter-spacing:0.4px;
 }
 .list-group-item {
@@ -1954,7 +1954,7 @@ a.list-group-item, button.list-group-item {
 	width: auto;
 }
 .left-location-item .list-lt {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: #01273a;
 	border-radius: 30px;
 	color: #fff;
@@ -2000,7 +2000,7 @@ a.list-group-item, button.list-group-item {
 	width: auto;
 }
 .left-archive-categor .list-lt {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	background: #01273a;
 	border-radius: 30px;
 	color: #fff;
@@ -2076,7 +2076,7 @@ a.list-group-item, button.list-group-item {
 	background-repeat: no-repeat
 }
 .site-footer a {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	color: #cfcfcf;
 	font-size: 14px;
 	font-weight: 500;
@@ -2084,7 +2084,7 @@ a.list-group-item, button.list-group-item {
 	display: block;
 }
 p.about-lt {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 500;
@@ -2183,7 +2183,7 @@ ul.widget-news-simple li {
 	font-weight: 600;
 }
 .widget-news-simple p {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	color: #cfcfcf;
 	font-size: 13px;
 	font-weight: 500;
@@ -2192,7 +2192,7 @@ ul.widget-news-simple li {
 	letter-spacing:0.3px;
 }
 .widget-news-simple div {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #f9ca40;
 	font-size: 13px;
 	font-weight: 500;
@@ -2270,7 +2270,7 @@ ul.use-slt-link li {
 	padding: 80px 0 70px;
 }
 .footer-top h2 {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
@@ -2332,20 +2332,20 @@ ul.use-slt-link li {
 	background-size: 100% auto;
 }
 .breadcrum-inner-header {
-	text-align: left;
-	padding-left: 20px;
+	text-align: right;
+	padding-right: 20px;
 }
 .breadcrum-inner-header::before {
 	background-color: #f9c841;
 	bottom: 2px;
 	content: "";
-	left: 15px;
+	right: 15px;
 	position: absolute;
 	top: 2px;
 	width: 4px;
 }
 .breadcrum-inner-header h1 {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	color: #ffffff;
 	letter-spacing:0.6px;
 	margin: 0px;
@@ -2355,7 +2355,7 @@ ul.use-slt-link li {
 	margin-bottom: 10px;
 }
 .breadcrum-inner-header a {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 500;
@@ -2388,7 +2388,7 @@ ul.use-slt-link li {
 	margin-bottom: 35px;
 }
 .about-heading-title h1 {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	margin: 0px;
 	color: #01273a;
 	text-transform: uppercase;
@@ -2399,7 +2399,7 @@ ul.use-slt-link li {
 	color: #ffce10;
 }
 p.inner-secon-tl {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	color: #7e7e7e;
 	font-size: 14px;
 	line-height: 27px;
@@ -2460,7 +2460,7 @@ p.inner-secon-tl {
 	width: 90px;
 }
 .service-item-fearured h3 {
-	font-family: "Raleway",sans-serif;
+	font-family: 'cocon',"Raleway",sans-serif;
 	color: #4a4a4a;
 	font-size: 18px;
 	font-weight: 600;
@@ -2470,7 +2470,7 @@ p.inner-secon-tl {
 	text-transform:uppercase;
 }
 .service-item-fearured p {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'cocon','Raleway', sans-serif;
 	color:#999999;
 	font-size: 13px;
 	font-weight: 500;
@@ -2576,7 +2576,7 @@ button.close {
 .listing-modal-1 .modal-header .modal-title {
 	color: #08c2f3;
 	line-height: 1;
-	text-align: left;
+	text-align: right;
 }
 .modal-title {
 	line-height: 1.42857;
@@ -2642,13 +2642,13 @@ label.checkbox-lable {
 	padding: 0;
 }
 .listing-modal-1 .modal-header .modal-title {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffce10;
 	line-height: 1;
-	text-align: left;
+	text-align: right;
 	font-weight: 600;
 	display:block;
-	float:left;
+	float:right;
 	text-transform: uppercase
 }
 .listing-modal-1 .modal-header .close {
@@ -2662,6 +2662,7 @@ label.checkbox-lable {
 	opacity: 1;
 	width: 36px;
 	display: block;
+	float: left;
 }
 .listing-modal-1 .modal-body {
 	padding: 40px 0 0;
@@ -2676,7 +2677,7 @@ label.checkbox-lable {
 	height: 51px;
 	line-height: 50px;
 	position: absolute;
-	right: 0;
+	left: 0;
 	text-align: center;
 	top: 0;
 	color: #c1c1c1;
@@ -2693,9 +2694,9 @@ label.checkbox-lable {
 	padding: 15px;
 }
 .listing-form-field a {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	display: inline-block;
-	float: right;
+	float: left;
 	position: relative;
 	text-align: right;
 	top: -4px;
@@ -2724,7 +2725,7 @@ label.checkbox-lable {
 	top: -2px;
 }
 label.checkbox-lable {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #999;
 	position: relative;
 	top: -8px;
@@ -2744,8 +2745,8 @@ label.checkbox-lable {
 	width: 100%;
 }
 .bottom-links p {
-	font-family: 'Open Sans', sans-serif;
-	text-align: left;
+	font-family: 'cocon','Open Sans', sans-serif;
+	text-align: right;
 	text-transform: capitalize;
 }
 .bottom-links p a {
@@ -2783,7 +2784,7 @@ label.checkbox-lable {
 	color: #ffffff;
 }
 .listing-form-field input.form-field {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	box-shadow: none;
 	font-weight:600;
 	margin-bottom: 10px;
@@ -3096,7 +3097,7 @@ label.checkbox-lable {
 	width: 100%;
 }
 .sorts-by-results span.result-item-view {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight:600;
 	color:#6b6b6b;
@@ -3106,7 +3107,7 @@ label.checkbox-lable {
 	font-weight: 700;
 }
 .sorts-by-results .disp-f-right {
-	float: right;
+	float: left;
 }
 .disp-f-right .disp-style {
 	float: left;
@@ -3349,7 +3350,7 @@ ul.vfx-pagination li.active a, ul.vfx-pagination li:hover a {
 	text-transform: uppercase;
 }
 .dlt-title-item div span {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	color: #ffbf02;
 }
 .dlt-title-item p {
@@ -4047,7 +4048,7 @@ ul.dropdown i.fa {
 	position: absolute;
 }
 .slt_item_head h1 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffffff;
 	font-size: 38px;
 	margin-bottom: 10px;
@@ -4099,7 +4100,7 @@ ul.dropdown i.fa {
 .slt_item_head .detail-banner-btn {
 	color: #fff;
 	cursor: pointer;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .slt_item_head .detail-banner-btn i {
@@ -4292,7 +4293,7 @@ ul.dropdown i.fa {
 	color: #ffce10;
 }
 .clt-content {
-	font-family:'Raleway', sans-serif;
+	font-family:'cocon','Raleway', sans-serif;
 	color: #696969;
 	display: inline-block;
 	font-size: 14px;
@@ -4519,7 +4520,7 @@ textarea.form-control {
 	background: rgba(255, 255, 255, 0.85);
 	bottom: 10px;
 	color: #363636;
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	left: 10px;
 	padding: 10px 0;
 	border-radius: 0 0 10px 10px;
@@ -4646,7 +4647,7 @@ textarea.form-control {
 	color: #81c860;
 }
 #dashboard_listing_blcok .statusbox-content h2 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	color:#6e6e6e;
 	display: block;
 	font-size: 26px;
@@ -4940,7 +4941,7 @@ input[type="checkbox"] {
 	width: 14.5%;
 }
 .tg-listbox span {
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	font-size:14px;
 	display: block;
 }
@@ -4975,7 +4976,7 @@ a.tg-btn-list:hover, a.tg-btn-list:focus{
 	margin: 0 0 0 10px;
 }
 .tg-listdata h4 a{
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	color:#4e4e4e;
 	font-weight:700;
 	font-size:16px;
@@ -4985,7 +4986,7 @@ a.tg-btn-list:hover, a.tg-btn-list:focus{
 	color:#ffce10;
 }
 .tg-listbox .tg-listdata span, .tg-listbox .tg-listdata time{
-	font-family: "Open Sans", sans-serif;
+	font-family: 'cocon',"Open Sans", sans-serif;
 	font-size:14px;
 	color:#6f6f6f;
 }
@@ -4994,7 +4995,7 @@ a.tg-btn-list:hover, a.tg-btn-list:focus{
 	background:#01273a;
 	color: #fff;
 	content: attr(data-title);
-	font-family: "Montserrat",Arial,Helvetica,sans-serif;
+	font-family: 'cocon',"Montserrat",Arial,Helvetica,sans-serif;
 	font-size: 18px;
 	height: 100%;
 	left: 0;
@@ -5039,7 +5040,7 @@ a.tg-btn-list:hover, a.tg-btn-list:focus{
 	background: #01273a;
 	color: #fff;
 	content: attr(data-title);
-	font-family: "Montserrat",Arial,Helvetica,sans-serif;
+	font-family: 'cocon',"Montserrat",Arial,Helvetica,sans-serif;
 	font-size: 18px;
 	height: 100%;
 	left: 0;
@@ -5133,7 +5134,7 @@ div.error-page-alt {
 	margin-bottom: 10px;
 }
 .f-title-error .f-primary-eb {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'cocon','Open Sans', sans-serif;
 	font-weight: 800;
 }
 .f-error-description span, .f-error-description strong {
