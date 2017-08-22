@@ -121,7 +121,7 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">  
 
 
-<!--    <title><?php //echo $title; ?></title>
+    <title><?php echo $title; ?></title>
     <meta charset="utf-8" dir="rtl">
     <meta content="<?//=$helper->generateCSF()?>" id="_token">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -131,12 +131,12 @@
 		
 
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/style.css?ver=3.1">
+    <link rel="stylesheet" href="assets/css/style.css?ver=3.1">-->
 	<link rel="stylesheet" href="assets/js/chosen.css?ver=1">
-	<link rel="stylesheet" href="assets/css/box.css">
+	<!--<link rel="stylesheet" href="assets/css/box.css">
 	 <style type="text/css" media="all">
     /* fix rtl for demo */
     .chosen-rtl .chosen-drop { left: -9000px; }
@@ -148,8 +148,8 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-
 -->
+
   
           	<?php 
  function printvalue($key)
