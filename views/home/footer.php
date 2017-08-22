@@ -90,7 +90,9 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel"> Login</h4>
+        <h4 class="modal-title" id="myModalLabel">
+          تسجيل الدخول
+        </h4>
       </div>
       <div class="modal-body">
         <div class="listing-login-form">
@@ -104,14 +106,14 @@
             <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
               <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
               <label for="checkbox-1-1"></label>
-              <label class="checkbox-lable">Remember me</label>
-              <a href="#">forgot password?</a> </div>
+              <label class="checkbox-lable">تذكرني</label>
+              <a href="?page=forgetpassword">نسيت كلمة السر</a> </div>
             <div class="listing-form-field">
-              <input class="form-field submit" type="submit" value="login" />
+              <input class="form-field submit" type="submit" value="تسجيل الدخول" />
             </div>
           </form>
           <div class="bottom-links">
-            <p>not a member?<a href="#">create account</a></p>
+            <p>ليس لديك حساب<a href="?page=signup">مستخدم جديد</a></p>
           </div>
         </div>
       </div>
@@ -125,30 +127,35 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel2">Registration</h4>
+        <h4 class="modal-title" id="myModalLabel2">تسجيل</h4>
       </div>
       <div class="modal-body">
         <div class="listing-register-form">
           <form action="#">
             <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>
-              <input class="form-field bgwhite" type="text" name="user_name" placeholder="name"  />
+              <input class="form-field bgwhite" type="text" name="user_name" placeholder="الاسم"  />
             </div>
             <div class="listing-form-field"> <i class="fa fa-envelope blue-1"></i>
-              <input class="form-field bgwhite" type="email" name="user_email" placeholder="email" />
+              <input class="form-field bgwhite" type="email" name="user_email" placeholder="البريد الإلكترونى" />
             </div>
             <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
-              <input class="form-field bgwhite" type="password" name="user_password" placeholder="password"  />
+              <input class="form-field bgwhite" type="password" name="user_password" placeholder="كلمة المرور"  />
             </div>
             <div class="listing-form-field"> <i class="fa fa-lock blue-1"></i>
-              <input class="form-field bgwhite" type="password" name="user_confirm_password" placeholder="confirm password" />
+              <input class="form-field bgwhite" type="password" name="user_confirm_password" placeholder="تأكيد كلمة المرور" />
             </div>
             <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
               <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" />
               <label for="checkbox-1-2"></label>
-              <label class="checkbox-lable">i agree with</label>
-              <a href="#">terms & conditions</a> </div>
+              <label class="checkbox-lable">أوافق على كافة</label>
+              <a href="?page=terms">الشروط والأحكام</a>
+              <label class="checkbox-lable">
+                اللازمة للتسجيل في الموقع
+              </label>
+
+            </div>
             <div class="listing-form-field">
-              <input class="form-field submit" type="submit" value="create account" />
+              <input class="form-field submit" type="submit" value="إنشاء حساب" />
             </div>
           </form>
         </div>
@@ -157,11 +164,11 @@
   </div>
 </div>
 <!-- Scripts --> 
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script> 
-<script type="text/javascript" src="js/bootstrap.min.js"></script> 
-<script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jquery_counterup.js"></script> 
-<script type="text/javascript" src="js/jquery_custom.js"></script> 
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/waypoints.js"></script>
+<script type="text/javascript" src="assets/js/jquery_counterup.js"></script>
+<script type="text/javascript" src="assets/js/jquery_custom.js"></script>
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
 <script type="text/javascript">
 $(document).ready(function(){

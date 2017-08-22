@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-3 col-xs-9 text-right">
-        <div id="logo"> <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a> </div>
+        <div id="logo"> <a href="/"><img src="assets/images/logo.png" alt="logo"></a> </div>
       </div>
 	  
       <div class="col-sm-9 text-right">
@@ -14,7 +14,7 @@
             <div id="nav_menu_list">
               <ul>
                 <li class="<?php if ($currentpage=="" || $currentpage=="index" ){echo 'active';} ?>"><a href="?page=index">الرئيسية</a></li>
-                <li class="<?php if ( $currentpage=="whyus"){echo 'active';} ?>"><a href="page=whyus">لماذا موجة</a></li>
+                <li class="<?php if ( $currentpage=="whyus"){echo 'active';} ?>"><a href="?page=whyus">لماذا موجة</a></li>
                 <li class="<?php if ($currentpage=="addproject" || $currentpage=="singleproject" || $currentpage=="projects"){echo 'active';}?>"><a href="?page=projects">المشروعات</a></li>
                 <li class="<?php if ($currentpage=="investment"){echo 'active';}?>"><a href="?page=investment">إستثمار</a></li>
 				<li class="<?php if ($currentpage=="addoffer" || $currentpage=="singleoffer" || $currentpage=="offers"){echo 'active';}?>" ><a href="?page=offers">عروض الجملة</a></li>
