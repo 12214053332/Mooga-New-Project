@@ -21,7 +21,7 @@
         <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
         <div class="blind line_2"></div>
       </div>
-      <span class="clt-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing.</span>
+      <span class="clt-content">يسعدنا دائماً الرد على استفساراتكم ومساعدتكم للاستفادة القصوى من خدمات موقعنا، كما أنه من دواعي سرورنا تلقى أي شكوى أو اقتراح لنعمل دوماً على تحقيق أعلى مستوى من الخدمة ورضى وسعادة عملائنا.</span>
       <div class="from-list-lt">
         <div class="col-xs-12 col-lg-8 col-sm-12">
           <form class="contactus-form form-float form-alt" id="contactus-form" action="#" method="post">
