@@ -4417,10 +4417,10 @@ textarea.form-control {
 }
 .lt-co-icon {
 	display: block;
-	float: left;
+	float: right;
 }
 .lt-co-blok-text {
-	padding-left: 55px;
+	padding-right: 55px;
 }
 .lt-co-title {
 	color: #343d46;

@@ -4,7 +4,7 @@
     float: right !important;
   }
 }
-.about-heading-title{
+.about-heading-title,html,body{
 direction: rtl ;
 }
 
