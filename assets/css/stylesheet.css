@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
-@font-face { font-family:cocon; src: url('../fonts/cocon.otf'); } 
+@font-face { font-family:cocon; src: url('../fonts/cocon.otf'); }
 /* --------------------------------------
 Table Of  Content
 
@@ -29,7 +29,7 @@ Table Of  Content
 23) Add Listings
 24) Right Side Bar
 25) User Dashboard
-26) Error Page 
+26) Error Page
 
 ---------------------------------------------- */
 
@@ -690,7 +690,7 @@ input.form-control {
 	-o-transition: ease-out .5s;
 	transition: ease-out .5s;
 	/*transform: rotate(360deg);*/
-	transition: all .6s ease-in-out 0;	
+	transition: all .6s ease-in-out 0;
 }
 .hi-icon {
 	color:#ffffff;
@@ -811,7 +811,7 @@ transform:scale(1.5)
 	padding: 10px 15px;
 	background: #ffbe00;
 	font-size: 15px;
-	text-align: left !important;	
+	text-align: left !important;
 	color: #01273a;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -828,7 +828,7 @@ transform:scale(1.5)
 .categories-list {
 	padding: 0px;
 	border: 1px solid #eeeeee;
-	border-top: none;	
+	border-top: none;
 }
 .categorie-list-box {
 	box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
@@ -1146,7 +1146,7 @@ transform:scale(1.5)
 .feature-box-text i.fa-star-half-empty {
 	margin-right: 5px;
 }
-.feature-item-container-box .feature-box-text h3 {	
+.feature-item-container-box .feature-box-text h3 {
 	margin-top: 0;
 	line-height:18px;
 	margin-bottom:7px;
@@ -1156,7 +1156,7 @@ transform:scale(1.5)
 	color: #4a4a4a;
 	font-weight: 700;
 	font-size: 16px;
-	margin-top: 0;	
+	margin-top: 0;
 }
 .feature-item-container-box .feature-box-text p {
 	color: #7d7d7d;
@@ -1165,7 +1165,7 @@ transform:scale(1.5)
 	font-weight:500;
 	margin-top: 10px;
 	margin-bottom: 0;
-	letter-spacing:0.4px;	
+	letter-spacing:0.4px;
 }
 .feature-item-container-box .feature-box-text a {
 	font-family:'cocon',"Open Sans",sans-serif;
@@ -1442,7 +1442,7 @@ transform:scale(1.5)
 	border-top: 1px solid #ebc131;
 	border-left:1px solid #ebc131;
 	border-right:1px solid #ebc131;
-}	
+}
 .recent-listing-box-container-item:hover .hover-overlay-inner::after {
 	border-left: 1px solid #ebc131;
 	border-right: 1px solid #ebc131;
@@ -1550,7 +1550,7 @@ transform:scale(1.5)
 }
 .listing-boxes-text a h3 {
 	font-family: 'cocon','Open Sans', sans-serif;
-	color: #4a4a4a;	
+	color: #4a4a4a;
 	font-size: 16px;
 	font-weight:700;
 	margin-top: 0;
@@ -1563,7 +1563,7 @@ transform:scale(1.5)
 }
 .listing-boxes-text p {
 	color: #7d7d7d;
-	font-size: 13px;	
+	font-size: 13px;
 	font-weight:500;
 	line-height: 22px;
 	margin-bottom: 0;
@@ -1656,13 +1656,13 @@ transform:scale(1.5)
 .price-table-feature-block.active {
 	box-shadow: -2px 5px 15px 7px #e2e2e2;
 	border-radius: 4px;
-	border:1px solid rgba(0, 0, 0, 0.15);	
+	border:1px solid rgba(0, 0, 0, 0.15);
 }
 .price-table-feature-block:hover {
 	transition: all 0.3s ease 0s;
 	box-shadow: -2px 5px 15px 7px #e2e2e2;
 	border-radius: 4px;
-	border:1px solid rgba(0, 0, 0, 0.15);	
+	border:1px solid rgba(0, 0, 0, 0.15);
 	-webkit-transform: scale(1.0);
 	transform: scale(1.0);
 	-webkit-transition: ease-out .5s;
@@ -1847,7 +1847,7 @@ a.list-group-item:hover {
 	margin-top: 11px;
 	text-align: center;
 	vertical-align: middle;
-	width: 28px;	
+	width: 28px;
 }
 a.list-group-item:hover i {
 	color: #01273a;
@@ -1890,7 +1890,7 @@ a.list-group-item.active span {
 	margin-bottom: -1px;
 	position: relative;
 	color: #696969;
-	font-size: 13px;	
+	font-size: 13px;
 	line-height: 48px;
 	padding: 0 15px;
 	font-weight:600;
@@ -1959,7 +1959,7 @@ a.list-group-item, button.list-group-item {
 	border-radius: 30px;
 	color: #fff;
 	float: right;
-	font-size: 11px;	
+	font-size: 11px;
 	margin-right: 8px;
 	padding: 6px 8px;
 	text-align: center;
@@ -1983,7 +1983,7 @@ a.list-group-item, button.list-group-item {
 .left-location-item ul li a {
 	color: #696969;
 	font-size: 13px;
-	text-align: left;	
+	text-align: left;
 	font-weight:600;
 	letter-spacing:0.5px;
 }
@@ -2005,7 +2005,7 @@ a.list-group-item, button.list-group-item {
 	border-radius: 30px;
 	color: #fff;
 	float: right;
-	font-size: 11px;	
+	font-size: 11px;
 	margin-right: 8px;
 	padding: 6px 8px;
 	text-align: center;
@@ -2026,7 +2026,7 @@ a.list-group-item, button.list-group-item {
 .left-archive-categor ul li a {
 	color: #696969;
 	font-size: 13px;
-	text-align: left;	
+	text-align: left;
 	font-weight:600;
 	letter-spacing:0.5px
 }
@@ -2034,7 +2034,7 @@ a.list-group-item, button.list-group-item {
 	margin-right:5px;
 }
 .left-archive-categor ul li a:hover {
-	color: #ffce10;	
+	color: #ffce10;
 	transition: all 0.2s linear 0s;
 }
 .working-hours .days {
@@ -2483,7 +2483,7 @@ p.inner-secon-tl {
 }
 .service-item-fearured:hover .hi-icon-effect-8 .hi-icon {
 	background: #ffbe00;
-	color: #ffffff;	
+	color: #ffffff;
 	cursor: pointer;
 }
 .service-item-fearured:hover .hi-icon-effect-8 .hi-icon::after {
@@ -2790,7 +2790,7 @@ label.checkbox-lable {
 	margin-bottom: 10px;
 	padding: 14px;
 }
-.listing-form-field input.form-field:focus{	
+.listing-form-field input.form-field:focus{
 	box-shadow:0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
 	outline:0 none;
 }
@@ -4070,7 +4070,7 @@ ul.dropdown i.fa {
 	margin-right: 15px;
 }
 .slt_item_head .detail-banner-btn a {
-	background: transparent linear-gradient(to right, #ffffff 50%, #ffce10 50%) repeat scroll right bottom / 207% 100%;		
+	background: transparent linear-gradient(to right, #ffffff 50%, #ffce10 50%) repeat scroll right bottom / 207% 100%;
 	color: #01273a;
 	cursor: pointer;
 	padding: 9px 15px;
@@ -4084,7 +4084,7 @@ ul.dropdown i.fa {
 }
 .slt_item_head .detail-banner-btn a:hover {
 	background: transparent linear-gradient(to right, #ffffff 50%, #ffce10 50%) repeat scroll right bottom / 207% 100%;
-	background-position: left bottom;	
+	background-position: left bottom;
 	color: #01273a;
 	-webkit-transition: all .6s ease 0;
 	transition: all .6s ease 0;
@@ -4371,7 +4371,7 @@ textarea.form-control {
 	font-weight: 600;
 	height: 46px;
 	line-height:46px;
-	border-radius: 6px;	
+	border-radius: 6px;
 	padding: 0 30px;
 	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.25);
 	text-align: center;
@@ -5203,4 +5203,7 @@ div.error-page-alt {
 	right: 0;
 	top: 0;
 	width: 34px;
+}
+.text-area{
+	background-color: #f9f9f9;
 }
