@@ -24,7 +24,7 @@
                                         </div>
                                     </div>
 									<div class="form-group col-lg-6 col-md-6 col-xs-12 col-sm-12" id="contact_section">
-                                        <!--label for="contact_phone" class="control-label md-font bold black-font col-lg-12 col-md-12 col-xs-12 col-sm-12">هاتف الاتصال <span class="asterisc">*</span> </label-->
+                                        <!--label for="contact_phone" class="control-label md-font bold black-font col-lg-12 col-md-12 col-xs-12 col-sm-12">هاتف الاتصال <span class="asterisc">*</span></label-->
 										<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
                                             <input type="number" class="form-control" id="contact_phone" maxlength="11"  minlength="9" name="contact_phone" placeholder="* هاتف الاتصال"   value="<?php printvalue('contact_phone'); ?>">
 

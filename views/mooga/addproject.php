@@ -11,6 +11,7 @@
 		 <div id="vfx-product-inner-item">
       <div class="container">
     <div class="row">
+			<div class="from-list-lt">
         <div class="col-lg-12 col-xs-12 col-md-12 col-xs-12 def-padding">
             <div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 center-table">
                 <h2 class="full-lines sm-font"><span class="blue-font"><?php if (getvalue('id')!="") {
@@ -25,7 +26,7 @@
                         <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 ">
                             <div class="col-md-12 col-lg-12 col-xs-10 col-sm-10 center-table">
 
-                                <form class="addproject-form"   id="addproject-form">
+                                <form class="addproject-form form-float form-alt"   id="addproject-form">
 								<div id="addproject-response"> </div>
 								   <div class="form-group">
                                         <button class="btn orange-btn" name="submit"><?php if (getvalue('id')!="") {
@@ -247,6 +248,7 @@
         </div>
 
     </div>
+	</div>
 </div>
 </div>
 
@@ -285,7 +287,7 @@ $('#needclose').click(function() {
 			  $( "#contact_section" ).html('<?php include("wedget/contact_phone.php"); ?>');
 		   }else if (typevalue==2)
 		   {
-			     $( "#contact_section" ).html('<label for="contact_email" class="control-label md-font bold black-font">الإيميل <span class="asterisc">*</span> </label> <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <input type="email" class="form-control" id="contact_email" name="contact_email" placeholder=""   value="<?php printvalue('contact_email'); ?>"></div>');
+			     $( "#contact_section" ).html('<!--label for="contact_email" class="control-label md-font bold black-font">الإيميل <span class="asterisc">*</span> </label--> <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12"> <input type="email" class="form-control" id="contact_email" name="contact_email" placeholder="الاميل"   value="<?php printvalue('contact_email'); ?>"></div>');
 		   }
 		  }
 
