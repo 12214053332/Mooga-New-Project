@@ -5204,3 +5204,7 @@ div.error-page-alt {
 	top: 0;
 	width: 34px;
 }
+.block-header{
+	margin-top: 30px;
+	margin-bottom: -30px;
+}

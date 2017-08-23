@@ -1,5 +1,11 @@
-                                <div class="col-lg-12 col-md-12  col-xs-12 col-sm-12">
-										 <h2 class="full-lines sm-font"><span class="blue-font">بيانات الاتصال</span></h2>
+                                <div class="col-lg-12 col-md-12  col-xs-12 col-sm-12 block-header">
+                                  <div class="col-md-12 contact-heading-title bt_heading_3">
+              											<h1>بيانات  <span>الاتصال</span></h1>
+              											<div class="blind line_1"></div>
+              											<div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+              											<div class="blind line_2"></div>
+              										</div>
+										 <!--h2 class="full-lines sm-font"><span class="blue-font">بيانات الاتصال</span></h2-->
 										 </div>
 									 <div class="form-group col-lg-12 col-md-12 col-xs-12 col-sm-12">
                                         <!--label for="contact_type" class=" control-label md-font bold black-font">طريقة التواصل عبر :<span class="asterisc">*</span> </label-->

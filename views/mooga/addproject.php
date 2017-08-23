@@ -6,19 +6,33 @@
        $object=isset($project) ? $project : '';
      ?>
 		 <div id="breadcrum-inner-block">
-
+		   <div class="container">
+		     <div class="row">
+		       <div class="col-sm-12 text-center">
+		         <div class="breadcrum-inner-header">
+		           <h1>اضف مشروع جديد</h1>
+		           <a href="">الرئيسية</a> <i class="fa fa-circle"></i> <a href="?page=addproject"><span>اضف مشروع جديد</span></a> </div>
+		       </div>
+		     </div>
+		   </div>
 		 </div>
 		 <div id="vfx-product-inner-item">
       <div class="container">
     <div class="row">
+
 			<div class="from-list-lt">
         <div class="col-lg-12 col-xs-12 col-md-12 col-xs-12 def-padding">
             <div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 center-table">
-                <h2 class="full-lines sm-font"><span class="blue-font"><?php if (getvalue('id')!="") {
-         echo "تعديل مشروع";
+							<div class="col-md-12 contact-heading-title bt_heading_3">
+								<h1><?php if (getvalue('id')!="") {
+         echo "تعديل <span>مشروع</span>";
      } else {
-         echo"اضف مشروع جديد";
-     }?></span></h2>
+         echo"اضف<span> مشروع</span> جديد";
+     }?></h1>
+								<div class="blind line_1"></div>
+								<div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+								<div class="blind line_2"></div>
+							</div>
 				<?php if ($user->phone!="") {
          ?>
                 <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 grey-border def-padding">
@@ -165,25 +179,31 @@
 
 									<?php include("wedget/contact_information.php") ?>
                                  	<!-- contact information -->
-									<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                    <h2 class="full-lines sm-font"><span class="blue-font">احتياجات المشروع</span></h2>
+									<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 block-header">
+										<div class="col-md-12 contact-heading-title bt_heading_3">
+											<h1>احتياجات <span>المشروع</span></h1>
+											<div class="blind line_1"></div>
+											<div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+											<div class="blind line_2"></div>
+										</div>
+                                    <!--h2 class="full-lines sm-font"><span class="blue-font">احتياجات المشروع</span></h2-->
 										</div>
 										<div class="form-group col-lg-12 col-md-12 col-xs-12 col-sm-12">
-                                        <label for="needpartner" class="col-md-4 col-lg-4 col-xs-4 col-sm-4 control-label md-font bold black-font">احتياج المشروع لـ: <span class="asterisc">*</span> </label>
-                                        <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
-                                            <label class="radio-inline">
-                                                <input type="checkbox" id="needpartner" name="needpartner" value="1" placeholder="" <?php $helper->check_value(getvalue('needpartner')); ?>> شريك
-                                            </label>
-                                            <label class="radio-inline" >
-                                                <input type="checkbox" id="needfunder" name="needfunder" value="1" placeholder="" <?php $helper->check_value(getvalue('needfunder')); ?>>   مستثمر
-                                            </label>
+                        <label for="needpartner" class="col-md-4 col-lg-4 col-xs-4 col-sm-4 control-label md-font bold black-font">احتياج المشروع لـ: <span class="asterisc">*</span> </label>
+                        <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                            <label class="radio-inline">
+                                <input type="checkbox" id="needpartner" name="needpartner" value="1" placeholder="" <?php $helper->check_value(getvalue('needpartner')); ?>> شريك
+                            </label>
+                            <label class="radio-inline" >
+                                <input type="checkbox" id="needfunder" name="needfunder" value="1" placeholder="" <?php $helper->check_value(getvalue('needfunder')); ?>>   مستثمر
+                            </label>
 
-											<label class="radio-inline">
-                                                <input type="checkbox" id="needbuyer" value="1" name="needbuyer" placeholder="" <?php $helper->check_value(getvalue('needbuyer')); ?>> مشتري للمشروع
-                                            </label>
+			<label class="radio-inline">
+                                <input type="checkbox" id="needbuyer" value="1" name="needbuyer" placeholder="" <?php $helper->check_value(getvalue('needbuyer')); ?>> مشتري للمشروع
+                            </label>
 
-                                        </div>
-                                     </div>
+                        </div>
+                  </div>
 									<div class="form-group col-lg-6 col-md-6 col-xs-12 col-sm-12" >
                                         <!--label for="budget" class="control-label md-font bold black-font">المبلغ المطلوب تقريباً<span class="asterisc">*</span></label-->
                                         <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
