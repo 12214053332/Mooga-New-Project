@@ -22,7 +22,7 @@
           <hr>
           <ul class="widget-news-simple">
             <li>
-              <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+              <div class="news-thum"><a href="#"><img src="assets/images/new-thum-1.png" alt="new-thum-1"></a></div>
               <div class="news-text-thum">
                 <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
                 <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
@@ -30,7 +30,7 @@
               </div>
             </li>
             <li>
-              <div class="news-thum"><a href="#"><img src="images/new-thum-1.png" alt="new-thum-1"></a></div>
+              <div class="news-thum"><a href="#"><img src="assets/images/new-thum-1.png" alt="new-thum-1"></a></div>
               <div class="news-text-thum">
                 <h6><a href="listing_detail.html">Hello Directory Listing</a></h6>
                 <p>Phasellus ut condimentum diam, eget tempus lorem...</p>
@@ -353,8 +353,8 @@ function setMarkers(map) {
   }    
 </script>
 </body>
-
-	
+<script src="assets/js/action/actions.js?ver=1"></script>
+<script src="assets/js/action/refer.js?ver=1"></script>
 	<script src="assets/js/validate/jquery.js"></script>
     <script src="assets/js/validate/jquery.validate.min.js"></script>
 	<script src="assets/js/validate.js?ver=1"></script>
