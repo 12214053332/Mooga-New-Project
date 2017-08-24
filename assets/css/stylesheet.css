@@ -2641,15 +2641,17 @@ label.checkbox-lable {
 	border-bottom: medium none;
 	padding: 0;
 }
-.listing-modal-1 .modal-header .modal-title {
+.listing-modal-1 .modal-header .modal-title,.title-login-form {
 	font-family: 'cocon','Open Sans', sans-serif;
 	color: #ffce10;
 	line-height: 1;
-	text-align: right;
 	font-weight: 600;
 	display:block;
-	float:right;
 	text-transform: uppercase
+}
+.listing-modal-1 .modal-header .modal-title{
+	float:right;
+	text-align: right;
 }
 .listing-modal-1 .modal-header .close {
 	background: #eaeaea;
