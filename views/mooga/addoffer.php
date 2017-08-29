@@ -59,25 +59,24 @@
 
                     <div class="from-list-lt">
                         <div class="col-xs-12 col-lg-12 col-sm-12">
-                            <form class="form-float form-alt">
+                            <form class="form-float form-alt addoffer-form" id="addoffer-form">
+                            <div id="addoffer-response"> </div>
                                 <div class="row">
 
                                     <div class="form-group col-xs-12 col-sm-12">
                                         <button class="btn pull-right" type="submit" name="submit"><?php if (  getvalue('id')!="")echo "تعديل";else echo"حفظ"?></button>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-12"> <label> حالة البضاعة <span class="asterisc">*</span> </label>
-                                    </div>
                                     <div class="form-group col-xs-12 col-sm-12">
-                                        <span class="from-input-ic"><i class="fa fa-cubes"></i></span>
+                                    </div>
 
+                                    <div class="form-group col-xs-12 col-sm-12">
+                                        <label for="offer_type_filed" > حالة البضاعة <span class="asterisc">*</span> </label>
                                         <select class="form-control chosen-select" data-placeholder=" اختر حالة البضاعة"   id="offer_type_filed" name="offer_type_filed"  <?php  echo $object->offer_type_filed; ?>>
                                             <option value=""></option>
                                             <?php $helper->getoptions( $offer_type_filed,'["'.$object->offer_type_filed.'"]'); ?>
-
                                         </select>
-
-
                                     </div>
+
 
                                     <div class="col-xs-12 col-md-12 col-lg-12 col-sm-12">
                                         <hr class="lt-co-green-hr">
@@ -90,10 +89,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-12"> <label> الصنف <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-12">
                                     </div>
 
-                                        <div class="form-group col-xs-12 col-sm-12">  <span class="from-input-ic"><i class="fa fa-pencil"></i></span>
+                                        <div class="form-group col-xs-12 col-sm-12">
+                                            <label for="item_brand"> الصنف <span class="asterisc">*</span> </label>
 
                                         <select class="form-control chosen-select" data-placeholder=" اختر الصنف"   id="item_brand" name="item_brand"  >
                                             <option value=""></option>
@@ -101,28 +101,29 @@
 
                                         </select>
                                     </div>
-                                    <div class="form-group col-xs-12"> <span class="from-input-ic"><i class="fa fa-comments"></i></span>
-
+                                    <div class="form-group col-xs-12">
+                                        <label   for="description" >الوصف<span class="asterisc">*</span> </label>
                                         <textarea type="text" class="form-control" id="description" name="description" placeholder="الوصف"><?php printvalue('description'); ?></textarea>
 
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-6"> <span class="from-input-ic"><i class="fa fa-shopping-cart"></i></span>
-<!--                                        <input class="form-control" required placeholder="Last Name" type="text">-->
+                                    <div class="form-group col-xs-12 col-sm-6">
+                                        <label for="min_qty" >اقل كمية <span class="asterisc">*</span> </label>
                                         <input type="number" class="form-control" id="min_qty" name="min_qty" placeholder="اقل كمية"  value="<?php printvalue('min_qty'); ?>">
 
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-6"> <span class="from-input-ic"><i class="fa fa-money"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-6">
+                                        <label for="price" >السعر <span class="asterisc">*</span> </label>
                                         <input type="number" class="form-control" id="price" name="price" placeholder="السعر"   value="<?php printvalue('price'); ?>">
 
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-4"> <label> الدولة <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-4"> <label for="country"> الدولة <span class="asterisc">*</span> </label>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-4"> <label> المحافظة <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-4"> <label for="states"> المحافظة <span class="asterisc">*</span> </label>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-4"> <label> المدينة <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-4"> <label for="cities"> المدينة <span class="asterisc">*</span> </label>
                                     </div>
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-flag"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-4">
 
                                         <select class="form-control chosen-select" id="country" name="country" required>
 
@@ -142,7 +143,7 @@
                                     </div>
 
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-flag"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-4">
 
 
                                         <select class="form-control chosen-select" id="states" name="states" >
@@ -152,7 +153,7 @@
                                         </select>
                                     </div>
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-flag"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-4">
 
                                         <select class="form-control chosen-select" id="cities" name="cities" >
 
@@ -171,10 +172,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-12"> <label> طريقة التواصل عبر  <span class="asterisc">*</span> </label>
-                                    </div>
 
-                                    <div class="form-group col-xs-12 col-sm-12">  <span class="from-input-ic"><i class="fa fa-bullhorn"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-12">
+                                        <label for="contact_type"> طريقة التواصل عبر  <span class="asterisc">*</span> </label>
                                         <select class="form-control chosen-select" id="contact_type" name="contact_type" >
                                             <option value="1"  <?php if (getvalue('contact_type') !=2) {echo 'selected';} ?>>عبر الهاتف</option>
                                             <option value="2" <?php if (getvalue('contact_type') ==2) {echo 'selected';} ?>>عبر البريد الإلكترونى</option>
@@ -182,26 +182,25 @@
                                         </select>
                                     </div>
                                     <div class="form-group col-xs-12 col-sm-12">
-                                    <div class="form-group col-xs-12 col-sm-4"> <label> اسم صاحب الهاتف <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-4"> <label for="contact_name" > اسم صاحب الهاتف <span class="asterisc">*</span> </label>
                                     </div>
-                                    <div class="form-group col-xs-12 col-sm-4"> <label> هاتف الاتصال <span class="asterisc">*</span> </label>
+                                    <div class="form-group col-xs-12 col-sm-4"> <label for="contact_phone"> هاتف الاتصال <span class="asterisc">*</span> </label>
                                     </div>
                                     </div>
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-user"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-4">
 
                                         <input type="text" class="form-control" id="contact_name" name="contact_name" placeholder="اسم صاحب الهاتف"   value="<?php printvalue('contact_name'); ?>">
 
                                     </div>
 
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-phone"></i></span>
-
+                                    <div class="form-group col-xs-12 col-sm-4">
                                         <input type="number" class="form-control" id="contact_phone" maxlength="11"  minlength="9" name="contact_phone" placeholder="هاتف الاتصال"   value="<?php printvalue('contact_phone'); ?>">
 
                                     </div>
 
-                                    <div class="form-group col-xs-12 col-sm-4">  <span class="from-input-ic"><i class="fa fa-fax"></i></span>
+                                    <div class="form-group col-xs-12 col-sm-4">
 
                                         <select class="form-control chosen-select" id="country_1" name="country_1" required>
 

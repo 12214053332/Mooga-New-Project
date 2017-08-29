@@ -232,10 +232,12 @@ Class _usersactionController Extends baseController {
  function redirecttopage()
  {	
         $httpref=$this->registry->sessionhandler->get('HTTP_REFERER');
-	 	if ($facebookpref!="" && strpos($httpref, $_SERVER['HTTP_HOST']) !== false){
+	 	if ((isset($facebookpref)&&$facebookpref!="") && strpos($httpref, $_SERVER['HTTP_HOST']) !== false){
 		ob_end_clean();
-		$data=array("httpref" => $httpref ,);
+		$data=array("httpref" => $httpref );
 		echo json_encode( $data);
+		}else{
+	 		echo  json_encode( ["httpref" => '?page=index']);
 		}
  }
  function redirecttopage_social()
