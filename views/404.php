@@ -1,16 +1,17 @@
-<div class="wrapper row2" >
-  <div id="container" class="clear">
-   
-    <div id="fof" class="clear">
-     
-      <div class="hgroup clear">
-        <h1>404</h1>
-        <h2>Error ! <span>Page Not Found</span></h2>
+<div id="breadcrum-inner-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <div class="breadcrum-inner-header">
+          <h1>الصفحة غير موجودة</h1>
+          <a href="/">الرئيسية</a> <i class="fa fa-circle"></i> <a href="page-error-404.html"><span>الصفحة غير موجودة</span></a> </div>
       </div>
-      <p>For Some Reason The Page You Requested Could Not Be Found On Our Server</p>
-      <p><a href="javascript:history.go(-1)">&laquo; Go Back</a> / <a href="?page=index">Go Home &raquo;</a></p>
-     
     </div>
-    
+  </div>
+</div>
+<div class="error-page-alt" style="background-image: url(assets/images/error-page-bg.jpg)">
+  <div class="container">
+    <div class="b-title-error f-title-error"> <span class="f-primary-eb">404</span> <strong class="f-primary-l">الصفحة غير موجودة !</strong> </div>
+    <div class="b-error-description f-error-description"> <strong class="f-primary">عذرا، هذه الصفحة غير موجودة</strong> <span class="f-primary">قد يكون الرابط الذي نقرت عليه تالفا، أو ربما تمت إزالة الصفحة.</span> </div>
   </div>
 </div>

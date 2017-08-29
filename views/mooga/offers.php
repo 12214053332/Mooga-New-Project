@@ -23,6 +23,10 @@
               <div class="row">
 
                   <div class="col-md-3 col-sm-4 col-xs-12">
+                      <a href="?page=addoffer" class="btn btn-success btn-block <?php if(in_array($currentpage,['projects'])) { ?>pull-right<?php }else{?>text-center<?php }?>"><span>أضف عرض جملة جديد</span></a>
+                      <div class="clearfix"></div>
+                      <div class="clearfix" style="height: 20px;"></div>
+
                       <form method="post"  action="#" id="<?php echo $form;?>offers-form">
                       <div class="news-search-lt">
                           <input class="form-control" placeholder="وصف عرض الجملة" type="text">
@@ -129,7 +133,13 @@
                   </div>
                   <div class="col-md-9 col-sm-8 col-xs-12">
                       <div class="sorts-by-results">
-                          <div class="col-md-6 col-sm-6 col-xs-6"> <span class="result-item-view">Your Search Returned <span class="yellow">16</span> Results</span> </div>
+                          <div class="col-md-6 col-sm-6 col-xs-6">
+                              <!--<span class="result-item-view">
+                                  Your Search Returned
+                                  <span class="yellow">16</span>
+                                  Results
+                              </span>-->
+                          </div>
                           <div class="col-md-6 col-sm-6 col-xs-6">
                               <div class="disp-f-right">
                                   <div class="disp-style active"><a href="listing_grid.html"><i class="fa fa-th"></i></a></div>

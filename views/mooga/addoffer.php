@@ -1,62 +1,34 @@
-
-
+<?php include("wedget/user-header.php");
+	  global $object;
+      $object=isset($offer) ? $offer : (object)['item_brand'=>''];
+	 ?>
 <div id="breadcrum-inner-block">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
                 <div class="breadcrum-inner-header">
-                    <?php if (isset($user->id)) {?>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 grey-border round-corner internal-sub-header btm-mrg-sm grey">
-                                    <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12 def-padding-sm">
-                                        <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
-                                            <a title="بيانات الحساب" class="edit_profile" href="?page=profile">  <img src="<?php echo $user->profilepic; ?>" class="round-corner justified-img"> </a>
-                                            <a class="btn blue-button small-font" title="تعديل الحساب"  href="?page=profile_edit" >تعديل الحساب</a>
-                                        </div>
-                                        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 ">
-                                            <p class="orange-font md-lg-font text-right"><?php echo $user->name; ?></p>
-
-                                            <p class="grey-font md-font text-right"><?php echo $user->job_title; ?></p>
-
-                                        </div>
-
-                                    </div>
-                                    <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 def-padding-sm justified-div">
-
-
-                                        <a href="?page=myprojects" class="header-btn md-font grey-font"><i class="btn-ico case"><span class="notification green" id="projects-balance"><?php echo $user->projects;?></span></i> مشروعاتى</a>
-                                        <a href="?page=myoffers" class="header-btn md-font grey-font"><i class="btn-ico light"><span class="notification green" id="offers-balance"><?php echo $user->offers;?></span></i> عروض الجملة</a>
-                                        <a href="?page=inbox" class="header-btn md-font grey-font"><i class="btn-ico message"><span class="notification red"><?php echo $messagecount; ?></span></i>  الرسائل</a>
-                                        <a href="?page=forgetpassword&action=changepassword" class="header-btn md-font grey-font"><i class="btn-ico settings"></i> تغيير كلمة المرور</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php } ?>
-                </div>
+                    <h1>اضف عرض جديد</h1>
+                    <a href="">الرئيسية</a> <i class="fa fa-circle"></i> <a href="?page=addproject"><span>اضف عرض جديد</span></a> </div>
             </div>
         </div>
     </div>
 </div>
-<!--	 --><?php //include("wedget/user-header.php");
-//	  global $object;
-//       $object=isset($offer) ? $offer : (object)['item_brand'=>''];
-//	 ?>
 <div id="vfx-product-inner-item">
     <div class="container">
         <div class="row">
         <div class="col-md-12 contact-heading-title text-center bt_heading_3">
-            <h1><?php if (getvalue('id')!="")echo "تعديل عرض";else echo"اضف عرض جديد"?></h1>
+            <h1><?php if (getvalue('id')!="") {
+                    echo "تعديل <span>عرض</span>";
+                } else {
+                    echo"اضف<span> عرض</span> جديد";
+                }?></h1>
             <div class="blind line_1"></div>
             <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
             <div class="blind line_2"></div>
         </div>
         <div class="col-lg-12 col-xs-12 col-md-12 col-xs-12 ">
             <div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 ">
-
 				<?php if ($user->phone!=""){ ?>
-
                     <div class="from-list-lt">
                         <div class="col-xs-12 col-lg-12 col-sm-12">
                             <form class="form-float form-alt addoffer-form" id="addoffer-form">

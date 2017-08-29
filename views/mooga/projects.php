@@ -16,6 +16,9 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-3 col-sm-4 col-xs-12">
+                        <a href="?page=addproject" class="btn btn-success btn-block <?php if(in_array($currentpage,['projects'])) { ?>pull-right<?php }else{?>text-center<?php }?>"><span>أضف مشروع جديد</span></a>
+                        <div class="clearfix"></div>
+                        <div class="clearfix" style="height: 20px;"></div>
                       <form id="allprojects-form" onsubmit="return false" method="post" action="#" novalidate="novalidate">
                           <div class="news-search-lt">
                               <input class="form-control" id="name" placeholder="اسم المشروع او وصف المشروع" type="text">
@@ -133,7 +136,13 @@
                   <div class="col-md-9 col-sm-8 col-xs-12 nopadding">
                       <div class="col-md-12 col-sm-12 col-xs-12">
                           <div class="sorts-by-results">
-                              <div class="col-md-6 col-sm-6 col-xs-6"> <span class="result-item-view">Your Search Returned <span class="yellow">16</span> Results</span> </div>
+                              <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <!--<span class="result-item-view">
+                                      Your Search Returned
+                                      <span class="yellow">16</span>
+                                      Results
+                                  </span>-->
+                              </div>
                               <div class="col-md-6 col-sm-6 col-xs-6">
                                   <div class="disp-f-right">
                                       <div class="disp-style"><a href="listing_grid.html"><i class="fa fa-th"></i></a></div>

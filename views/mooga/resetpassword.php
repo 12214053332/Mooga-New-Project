@@ -1,67 +1,54 @@
-								
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-lg-8 col-xs-12 col-sm-12 center-table">
-            <h2 class="full-lines sm-font"><span class="black-font">تغيير كلمه المرور</span></h2>
-            <p class="grey-font md-font text-center">من فضلك أدخل كلمة المرور الجديدة</p>
-            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 triangle-tabs">
-                
-                <div class="tab-content">
-				
-                    <div role="tabpanel" class="col-md-12 col-lg-12 col-xs-12 col-sm-12 tab-pane active dark-grey" id="resetpassword">
-                        <div class="row">
-                         
-                                        <div class="form-group">
-                                            
-                                        </div>
-										<div class="form-group">
-										
-                                        </div>
-                                        <div class="form-group">
-                                            
-                                        </div>
-                          
-                            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-                                <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10 center-table">
-                                    <form class="login-form col-md-8 col-lg-8 col-xs-12 col-sm-12 center-table" action="#" method="post" id="resetpassword-form" name="resetpassword-form">
-									  <input type="hidden" class="form-control" id="token" name="token"value="<?php echo $token; ?>">
-											  <div class="form-group col-md-12 col-lg-12 col-xs-12 col-sm-12">
-                                            <label for="" class="control-label"><span class="asterisc">*</span>كلمة المرور</label>
-                                            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-											
-                                                <input type="password" class="form-control" id="password" name="password" placeholder="أدخل كلمة المرور"  required>
-                                            <label for="password"></label>
-											</div>
-                                        </div>
-										
-										<div class="form-group col-md-12 col-lg-12 col-xs-12 col-sm-12">
-                                            <label for="" class=" control-label"><span class="asterisc">*</span>تأكيد كلمة المرور</label>
-                                            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
-												
-											  <input type="password" class="form-control" id="confirmpassword" name="confirmpassword" placeholder="تأكيد كلمة المرور"  required>
-											  <label for="confirmpassword"></label>                                              
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <div class="">
-                                                <button name="submit" class="btn orange-btn">تغيير كلمة المرور</button>
-                                            </div>
-											
-                                        </div>
-										<div  class="form-group">
-											<div id="resetpassword-response">
-                                                
-                                            </div>
-											 </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-			   </div>
+<div id="breadcrum-inner-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="breadcrum-inner-header">
+                    <h1>تغيير كلمه المرور</h1>
+                    <a href="/">الرئيسية</a> <i class="fa fa-circle"></i> <a href="?page=login"><span>تغيير كلمه المرور</span></a> </div>
             </div>
         </div>
     </div>
+</div>
+
+
+
+<div id="vfx-product-inner-item">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-4 listing-modal-1">
+                <div class="text-center">
+                    <h4 class="title-login-form">
+                        تغيير كلمه المرور
+                    </h4>
+
+                </div>
+                <p>من فضلك أدخل كلمة المرور الجديدة</p>
+                <div class="clearfix"></div>
+                <div class="listing-login-form">
+                    <form action="#" method="post" id="resetpassword-form" name="resetpassword-form">
+                        <input type="hidden" class="form-control" id="token" name="token"value="<?php echo $token; ?>">
+                        <div class="listing-form-field">
+                            <input class="form-field bgwhite" type="password" name="password"  id="password" placeholder="أدخل كلمة المرور" required  />
+                            <label for="password"></label>
+                        </div>
+                        <div class="listing-form-field">
+                            <input class="form-field bgwhite" type="password" name="confirmpassword"  id="confirmpassword" placeholder="تأكيد كلمة المرور" required  />
+                            <label for="confirmpassword"></label>
+                        </div>
+                        <div class="listing-form-field">
+                            <input class="form-field submit" name="submit" type="submit" value="تغير كلمة المرور" />
+                        </div>
+                        <div  class="form-group">
+                            <div id="resetpassword-response">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>

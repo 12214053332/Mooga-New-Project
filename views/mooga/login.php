@@ -21,8 +21,9 @@
                 <h4 class="title-login-form">
                     تسجيل الدخول
                 </h4>
-            </div>
 
+            </div>
+            <p>إبدأ رحلتك مع منصة موجة بتسجيل الدخول أو تفعيل إشتراكك الذي كونته</p>
             <div class="clearfix"></div>
             <div class="listing-login-form">
                 <form action="?page=_usersaction&action=login" id="login-form" name="login-form">
@@ -37,10 +38,10 @@
                     <div class="listing-form-field clearfix margin-top-20 margin-bottom-20">
                         <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" />
                         <label for="checkbox-1-1"></label>
-                        <label class="checkbox-lable">تذكرني</label>
+                        <label name="remember_me" value="1" class="checkbox-lable">تذكرني</label>
                         <a href="?page=forgetpassword">نسيت كلمة السر</a> </div>
                     <div class="listing-form-field">
-                        <input class="form-field submit" type="submit" value="تسجيل الدخول" />
+                        <input class="form-field submit"  type="submit" value="تسجيل الدخول" />
                     </div>
                     <div class="form-group">
                         <div id="login-response">

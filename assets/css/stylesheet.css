@@ -113,6 +113,16 @@ option {
 	top: 50%;
 	width: 100px;
 }
+.cst-right-alignment{
+	float: right;
+}
+.orange-font{
+	color:#ffce10;
+}
+.form-group span.error{
+	color: #ff0000;
+}
+
 /***************************** placeholder color ********************/
 .form-control::-webkit-input-placeholder {
 	color:#969595;
