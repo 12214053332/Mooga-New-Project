@@ -18,7 +18,7 @@
                 <li class="<?php if ($currentpage=="addproject" || $currentpage=="singleproject" || $currentpage=="projects"){echo 'active';}?>"><a href="?page=projects">المشروعات</a></li>
                 <li class="<?php if ($currentpage=="investment"){echo 'active';}?>"><a href="?page=investment">إستثمار</a></li>
 				<li class="<?php if ($currentpage=="addoffer" || $currentpage=="singleoffer" || $currentpage=="offers"){echo 'active';}?>" ><a href="?page=offers">عروض الجملة</a></li>
-                <li class="<?php if ($currentpage=="singlearticle" || $currentpage=="articles" || $currentpage=="singlecategory"){echo 'active';}?>"><a href="?page=articles">المقالات</a></li>
+                <!--<li class="<?php /*if ($currentpage=="singlearticle" || $currentpage=="articles" || $currentpage=="singlecategory"){echo 'active';}*/?>"><a href="?page=articles">المقالات</a></li>-->
                 <span class="btn_item">
                   <?php if($IsLogin){?>
                     <li class="<?php if ($currentpage=="profile"){echo 'active';}?>">

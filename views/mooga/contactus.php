@@ -27,6 +27,7 @@
           <form class="contactus-form form-float form-alt" id="contactus-form" action="#" method="post">
             <div class="row">
               <div class="form-group col-xs-12 col-sm-6">
+                <label for="type"></label>
                 <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" name="type" id="type">
                   <option value="">--اختر الغرض--</option>
                   <option value="أستفسار">أستفسار</option>
@@ -36,17 +37,24 @@
                 </select>
               </div>
               <div class="form-group col-xs-12 col-sm-6">
-                <input type="text" class="form-control" id="name" name="name" placeholder="الاسم*" value="">
-                <span class="from-input-ic"><i class="fa fa-user"></i></span>
+                  <label for="name"></label>
+                  <input type="text" class="form-control" id="name" name="name" placeholder="الاسم*" value="">
+                  <span class="from-input-ic haslabel"><i class="fa fa-user"></i></span>
               </div>
-              <div class="form-group col-xs-12 col-sm-6"> <span class="from-input-ic"><i class="fa fa-envelope-o"></i></span>
+              <div class="form-group col-xs-12 col-sm-6">
+                <label for="email"></label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="الاميل" value="">
+                <span class="from-input-ic haslabel"><i class="fa fa-envelope-o"></i></span>
               </div>
-              <div class="form-group col-xs-12 col-sm-6"> <span class="from-input-ic"><i class="fa fa-phone"></i></span>
-                <input type="phone" class="form-control" id="phone" name="phone" placeholder="التليفون" value="">
+              <div class="form-group col-xs-12 col-sm-6">
+                <label for="phone"></label>
+                <input type="tel" class="form-control" id="phone" name="phone1" placeholder="التليفون" value="">
+                <span class="from-input-ic haslabel"><i class="fa fa-phone"></i></span>
               </div>
-              <div class="form-group col-xs-12"> <span class="from-input-ic"><i class="fa fa-comments"></i></span>
+              <div class="form-group col-xs-12">
+                <label for="message"></label>
                 <textarea type="text" class="form-control" id="message" name="message" placeholder="الرساله"></textarea>
+                <span class="from-input-ic haslabel"><i class="fa fa-comments"></i></span>
               </div>
               <!--div class="form-group col-xs-12 col-sm-6">
                 <input class="verifi_code form-control" required="" placeholder="Verification Code" type="text">
