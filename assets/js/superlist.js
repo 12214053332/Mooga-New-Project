@@ -277,12 +277,12 @@ $(document).ready(function() {
     /**
      * Input file
      */
-    $('#input-file').fileinput({
+    /*$('#input-file').fileinput({
         initialPreview: [
             "<img src='assets/img/tmp/product-1.jpg' class='file-preview-image' alt='Listing 1' title='Listing 1'>",
             "<img src='assets/img/tmp/product-2.jpg' class='file-preview-image' alt='Listing 2' title='Listing 2'>"
         ],
         overwriteInitial: true,
         initialCaption: "Your Uploaded Images"
-    });
+    });*/
 });
