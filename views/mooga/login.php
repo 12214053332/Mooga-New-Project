@@ -16,7 +16,7 @@
 <div id="vfx-product-inner-item">
 <div class="container">
     <div class="row">
-        <div class="col-lg-4 col-lg-offset-4 listing-modal-1">
+        <div class="col-lg-6 col-lg-offset-3 listing-modal-1">
             <div class="text-center">
                 <h4 class="title-login-form">
                     تسجيل الدخول
@@ -25,6 +25,16 @@
             </div>
             <p>إبدأ رحلتك مع منصة موجة بتسجيل الدخول أو تفعيل إشتراكك الذي كونته</p>
             <div class="clearfix"></div>
+            <div class="clearfix"></div>
+            <div class="clearfix" style="height: 20px"></div>
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <a class="btn facebook-btn" href="fblogin/fbconfig.php">من خلال حسابك في</a>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
+                <a class="btn linkedin-btn" href="linkedinuser/process.php">من خلال حسابك في</a>
+            </div>
+            <div class="clearfix"></div>
+            <div class="clearfix" style="height: 20px"></div>
             <div class="listing-login-form">
                 <form action="?page=_usersaction&action=login" id="login-form" name="login-form">
                     <div class="listing-form-field"> <i class="fa fa-user blue-1"></i>

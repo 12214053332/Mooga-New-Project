@@ -209,8 +209,8 @@
 							   var id = JSON.parse(data);
 							   window.location.assign('?page=verifie_project&project_id='+id.id);
 						 }
-						
 						 else {
+							$('html,body').animate({ scrollTop: $("#addproject-response").offset().top }, 'slow');
                          $('#addproject-response').html(data);
                         }
 						  

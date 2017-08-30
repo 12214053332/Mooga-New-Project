@@ -25,11 +25,11 @@
             <li><a href="?page=projects"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp; المشروعات</a></li>
             <li><a href="?page=investment"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp; إستثمار</a></li>
             <li><a href="?page=offers"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;عروض الجملة</a></li>
-            <li><a href="?page=articles"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;المقالات</a></li>
+            <!--<li><a href="?page=articles"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;المقالات</a></li>-->
             <li><a href="?page=aboutus"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;من نحن</a></li>
             <li><a href="?page=contactus"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;اتصل بنا</a></li>
           </ul>
-          <ul class="use-slt-link col-md-6 col-sm-6 col-xs-12">
+          <!--<ul class="use-slt-link col-md-6 col-sm-6 col-xs-12">
             <li><a href="?page=articles"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;المقالات </a></li>
             <li><a href="?page=singlecategory&id=ddsLidbb-G1x1J5nwboOyIxlefKX4FT47XMIKyqAbVI"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;تسويق </a></li>
             <li><a href="?page=singlecategory&id=SU7emvK2gm3lf_dwD9vesP7AR16KQIHq00c4b663izg"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;إدارة البيزنس وقت الأزمات </a></li>
@@ -37,7 +37,7 @@
             <li><a href="?page=singlecategory&id=3ltBYIgZDhayDXRQooT8p_hzouw4B1VX41XAgaws2bI"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;بناء فريق العمل</a></li>
             <li><a href="?page=singlecategory&id=X1_9zSdzF190vtVSCViJ089VA46fz0NJwHlDMs2dcy0"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;أسباب فشل الشركات الناشئة</a></li>
             <li><a href="?page=singlecategory&id=_qKclohHXBBC6MU8JOQmtzpeQll10WoZ2l_t6XHGcsE"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;أسباب نجاح الشركات الناشئة</a></li>
-          </ul>
+          </ul>-->
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <h2>هل لديك أي استفسار؟</h2>

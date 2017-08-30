@@ -48,6 +48,29 @@ img {
 	margin: 0px;
 	padding: 0px;
 }
+/*social login icon start*/
+.facebook-btn {
+	color: #ffffff;
+	background: url(img/facebook.jpg) center left no-repeat, #38558f;
+	width: 235px;
+	font-size: 11px;
+	height: 40px;
+	text-align: right;
+	padding: 10px 6px !important;
+}
+.linkedin-btn {
+	background: url(img/linkedin.jpg) center left no-repeat, #006699;
+	color: #ffffff;
+	width: 235px;
+	font-size: 11px;
+	height: 40px;
+	text-align: right;
+	padding: 10px 6px !important;
+}
+/*social icon end*/
+#contactus-form .form-control{
+	padding-right: 55px;
+}
 a {
 	text-decoration: none !important;
 	outline: 0 !important;
@@ -119,10 +142,14 @@ option {
 .orange-font{
 	color:#ffce10;
 }
-.form-group span.error{
-	color: #ff0000;
+span.error,.form-control.error{
+	color: red;
+	font-size: 10px
 }
-
+span.asterisc {
+	font-family: monospace;
+	color: #ec0f0f;
+}
 /***************************** placeholder color ********************/
 .form-control::-webkit-input-placeholder {
 	color:#969595;
@@ -4352,6 +4379,7 @@ ul.dropdown i.fa {
 .from-list-lt input:focus {
 	border-color: #ffce10
 }
+
 .from-list-lt .from-input-ic {
 	border-left: 1px solid rgba(216, 216, 216, 0.6);
 	bottom: 0;
@@ -4366,6 +4394,9 @@ ul.dropdown i.fa {
 	font-size: 17px;
 	margin-right: 15px;
 	margin-top: 13px;
+}
+.from-list-lt .from-input-ic.haslabel{
+	top: 20px;
 }
 .form-float {
 	transform: translateY(0%);
@@ -4855,8 +4886,8 @@ input[type="checkbox"] {
 	content: "";
 	display: inline-block;
 	height: 20px;
-	left: 0;
-	margin-left: -23px;
+	right: 0;
+	margin-right: -23px;
 	position: absolute;
 	transition: border 0.15s ease-in-out 0s, color 0.15s ease-in-out 0s;
 	width: 20px;
@@ -4866,8 +4897,8 @@ input[type="checkbox"] {
 	display: inline-block;
 	font-size: 11px;
 	height: 20px;
-	left: 0;
-	margin-left: -23px;
+	right: 0;
+	margin-right: -23px;
 	margin-top: 0;
 	padding-left: 5px;
 	padding-top: 0;
