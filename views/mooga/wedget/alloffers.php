@@ -23,7 +23,10 @@
                                 <div class="recent-listing-box-item">
                                     <div class="listing-boxes-text"> <a href="?page=singleoffer&pid=<?php  echo $offer->id;?>">
                                             <h3><?php echo $offer->item_brand_name  . ' , ' .$offer->item_type_name.' , '.$offer->item_names_name ?></h3>
-                                        </a> <a href="#"><i class="fa fa-phone"></i> +91 087 654 3210</a>
+                                        </a>
+                                        <!--<div class="phone">
+                                            <a href="#"><i class="fa fa-phone"></i></a>
+                                        </div>-->
                                         <p><?php echo $offer->description;?></p>
                                     </div>
                                     <div class="recent-feature-item-rating">

@@ -31,7 +31,6 @@
         </div>
 
         <div class="col-lg-12 col-xs-12 col-md-12 col-xs-12 def-padding">
-            <div class="col-md-10 col-lg-10 col-xs-12 col-sm-12 center-table">
 				<?php if ($user->phone!="") {
 
          ?>
@@ -42,95 +41,129 @@
                             <div class="col-md-12 col-lg-12 col-xs-10 col-sm-10 center-table">
                                 <div class="from-list-lt">
                                     <form class="addproject-form"   id="addproject-form">
+                                        <div class="form-group col-xs-12 col-sm-12">
+                                            <button class="btn pull-right" type="submit" name="submit">حفظ</button>
+                                        </div>
                                         <div id="addproject-response"> </div>
                                         <input type="hidden" name="record" value="<?php printvalue('id') ?>">
-                                        <div class="form-group">
+                                        <div class="form-group col-lg-12 col-md-12 col-xs-12">
                                             <label class=" control-label md-font bold black-font">اسم المشروع <span class="asterisc">*</span> </label>
                                             <input type="text" class="form-control" id="name" name="name" placeholder=""   value="  <?php printvalue('name'); ?>">
                                             <label for="name"></label>
                                         </div>
-                                        <div class="form-group">
-                                            <label class="control-label md-font bold black-font">نوع المشروع</label>
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                            <label class="control-label md-font bold black-font">نوع المشروع<span class="asterisc">*</span></label>
                                             <label for="project_type"></label>
                                             <select class="form-control chosen-select" data-placeholder="اختر نوع عمل المشروع"  id="project_type" name="project_type" required>
                                                 <option value=""></option>
                                                 <?php $helper->getoptions( $project_type,"[$object->project_type_list]"); ?>
                                             </select>
                                         </div>
-                                        <div class="form-group">
-                                            <label for="project_field" class=" control-label md-font bold black-font">مجال عمل المشروع</label>
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12">
+                                            <label for="project_field" class=" control-label md-font bold black-font">مجال عمل المشروع<span class="asterisc">*</span></label>
                                             <select class="form-control chosen-select" data-placeholder="اختر مجال عمل المشروع"   id="project_field" name="project_field"  <?php  echo $object->project_field_list; ?>>
                                                 <option value=""></option>
                                                 <?php $helper->getoptions( $project_field,"[$object->project_field_list]"); ?>
                                             </select>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-lg-12 col-md-12 col-xs-12">
                                             <label  class=" control-label md-font bold black-font">وصف المشروع  <span class="asterisc">*</span> </label>
                                             <textarea type="text" class="form-control" id="description" name="description" placeholder="">  <?php printvalue('description'); ?></textarea>
                                             <label for="description"></label>
                                         </div>
-
-                                        <div class="form-group">
-                                            <label for="country" class="control-label md-font bold black-font">دولة المشروع</label>
-                                            <select class="form-control chosen-select" data-placeholder="اختر  دولة المشروع"  id="country" name="country">
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12 pull-right">
+                                            <label  class=" control-label md-font bold black-font">حالة المشروع<span class="asterisc">*</span> </label><label for="stage"></label>
+                                            <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" data-placeholder="* اختر مرحلة المشروع الحالية"  id="stage" name="stage">
                                                 <option value=""></option>
-                                                <?php $helper->getoptions_single( $countries,$project->country); ?>
+                                                <?php $helper->getoptions($project_stage, "[$object->stage_list]"); ?>
                                             </select>
+
                                         </div>
 
-
-                                        <div class="form-group">
-                                            <label for="stage" class="control-label md-font bold black-font">المرحلة الحالية</label>
-                                            <select class="form-control chosen-select" data-placeholder="اختر مرحلة المشروع الحالية"  id="stage" name="stage">
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12 pull-right">
+                                            <label  class=" control-label md-font bold black-font">الدولة <span class="asterisc">*</span> </label><label for="country"></label>
+                                            <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" id="country" name="country" required data-placeholder=" * الدولة">
                                                 <option value=""></option>
-                                                <?php $helper->getoptions( $project_stage,"[$object->stage_list]"); ?>
+                                                <?php
+                                                $ids=getvalue('country');
+                                                $select="";
+                                                foreach ($countries as $country) {
+                                                    $id=$country['id'];
+                                                    $name=$country['name'];
+                                                    $code=$country['code'];
+                                                    if ($ids==$id) {
+                                                        $select="selected";
+                                                    } else {
+                                                        $select="";
+                                                    }
+                                                    echo " <option value='$id'  data-code='$code' $select>$name</option> ";
+                                                } ?>
                                             </select>
+
                                         </div>
 
-                                        <h2 class="full-lines sm-font"><span class="blue-font">احتياجات المشروع</span></h2>
-
-                                        <!--<div class="form-group">
-                                            <label for="project_product" class="control-label md-font bold black-font">قائمة المنتجات التي يحتاجها المشروع</label>
-                                            <select class="form-control chosen-select" multiple data-placeholder="اختر قائمة المنتجات التي يحتاجها المشروع"  name="project_product"id="project_product">
-                                                <?php /*$helper->getoptions( $products,$object->project_product_list); */?>
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12 pull-right">
+                                            <label  class=" control-label md-font bold black-font">المحافظة<span class="asterisc">*</span> </label><label for="states"></label>
+                                            <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" id="states" name="states" data-placeholder=" * المحافظة">
+                                                <option value=""></option>
                                             </select>
+
+                                        </div>
+                                        <div class="form-group col-lg-6 col-md-6 col-xs-12 pull-right">
+                                            <label  class=" control-label md-font bold black-font">المدينة<span class="asterisc">*</span> </label><label for="cities"></label>
+                                            <select class="form-control cust-input-width cust-input-width-three zero-top-margin hi25 valid chosen-select" id="cities" name="cities" data-placeholder=" * المدينة">
+                                                <option value=""></option>
+                                            </select>
+
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="project_service" class="control-label md-font bold black-font">قائمة الخدمات التي يحتاجها المشروع</label>
-                                            <select class="form-control chosen-select" multiple  data-placeholder="اختر قائمة الخدمات التي يحتاجها المشروع  " name="project_service"id="project_service">
-                                                <?php /*$helper->getoptions( $services,$object->project_service_list); */?>
-                                            </select>
-                                        </div>-->
 
-                                        <div class="form-group">
+                                        <?php include("wedget/contact_information.php") ?>
+
+
+
+
+
+                                        <div class="col-lg-12 col-md-12  col-xs-12 col-sm-12 block-header text-center">
+                                            <div class="col-md-12 contact-heading-title bt_heading_3">
+                                                <h1>احتياجات  <span>المشروع</span></h1>
+                                                <div class="blind line_1"></div>
+                                                <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
+                                                <div class="blind line_2"></div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="clearfix"></div>
+
+                                        <div class="form-group col-lg-12 col-md-12 col-xs-12">
                                             <label for="needpartner" class="control-label md-font bold black-font">احتياج المشروع لـ: </label>
                                             <label class="radio-inline">
                                                 <input type="checkbox" id="needpartner" name="needpartner" value="1" placeholder="" <?php $helper->check_value(getvalue('needpartner')); ?>> شريك
                                             </label>
                                             <label class="radio-inline" >
-                                                <input type="checkbox" id="needfunder" name="needfunder" value="1" placeholder="" <?php $helper->check_value(getvalue('needfunder')); ?>>   ممول
+                                                <input type="checkbox" id="needfunder" name="needfunder" value="1" placeholder="" <?php $helper->check_value(getvalue('needfunder')); ?>>   مستثمر
                                             </label>
                                             <label class="radio-inline">
-                                                <input type="checkbox" id="needdealer" name="needdealer" value="1" placeholder="" <?php $helper->check_value(getvalue('needdealer')); ?>>  موزع
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="checkbox" id="needagent" value="1" name="needagent" placeholder="" <?php $helper->check_value(getvalue('needagent')); ?>>  وكيل
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="needclose" class="control-label md-font bold black-font"> المشروع في مرحلة :  </label>
-                                            <label class="radio-inline">
-                                                <input type="checkbox"  id="needclose" name="needclose" value="1" placeholder="" <?php $helper->check_value(getvalue('needclose')); ?>>  تصفية
+                                                <input type="checkbox" id="needbuyer" name="needbuyer" value="1" placeholder="" <?php $helper->check_value(getvalue('needbuyer')); ?>>   مشتري للمشروع
                                             </label>
                                         </div>
 
-                                        <div class="form-group" id="closedescriptionsection">
-                                            <label for="closedescription" class="control-label md-font bold black-font">تفاصيل التصفية </label>
 
-                                                <textarea type="text" class="form-control" id="closedescription"  name="closedescription" placeholder=""  > <?php printvalue('closedescription'); ?></textarea>
-
+                                        <div class="form-group col-lg-12 col-md-12 col-xs-12">
+                                            <label  class=" control-label md-font bold black-font">المبلغ المطلوب تقريباً<span class="asterisc">*</span> </label>
+                                            <input type="number" id="budget" name="budget" placeholder="" class="form-control error" value="" aria-required="true">
+                                            <label for="budget"></label>
                                         </div>
+                                        <div class="form-group col-lg-12 col-md-12 col-xs-12">
+                                            <label  class=" control-label md-font bold black-font">أسباب الاحتياج <span class="asterisc">*</span> </label>
+                                            <textarea type="text" class="form-control" id="needdescription" name="needdescription" placeholder=""></textarea>
+                                            <label for="needdescription"></label>
+                                        </div>
+
+
+
 
                                         <div class="form-group">
                                             <label for="closedescription" class="control-label md-font bold black-font">صورة المشروع</label>
@@ -163,7 +196,7 @@
 
      }?>
 			</div>
-        </div>
+
 
     </div>
 	</div>

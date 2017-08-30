@@ -36,8 +36,6 @@ if(isset($session)&&$session){
     try {
         $response=$fb->get('/me?fields=first_name,last_name,email,name,link,location,gender,birthday,hometown&access_token='.$session,[],$session);
         $data=$response->getDecodedBody();
-       // print_r($data);
-        //return'';
         $fbid=$data['id'];
         $fbfullname=$data['name'];
         $femail=$data['email'];

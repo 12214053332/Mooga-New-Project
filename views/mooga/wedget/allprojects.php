@@ -25,9 +25,9 @@
                                         <a href="?page=singleproject&pid=<?php  echo $project->id;?>">
                                             <h3><?php echo $project->name;?></h3>
                                         </a>
-                                        <div class="phone">
-                                            <a href="#"><i class="fa fa-phone"></i> +91 087 654 3210</a>
-                                        </div>
+                                        <!--<div class="phone">
+                                            <a href="#"><i class="fa fa-phone"></i></a>
+                                        </div>-->
 
 
                                         <p><?php  echo $helper->__html($project->description,150,array('html' => true, 'ending' => '')).'....'; ?></p>
