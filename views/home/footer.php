@@ -153,13 +153,26 @@
   </div>
 </div>
 <!-- Scripts -->
+
+
 <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery_custom.js"></script>
+<script type="text/javascript" src="assets/js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select/bootstrap-select.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="assets/js/waypoints.js"></script>
 <script type="text/javascript" src="assets/js/jquery_counterup.js"></script>
-<script type="text/javascript" src="assets/js/jquery_custom.js"></script>
+<script type="text/javascript" src="assets/js/superlist.js"></script>
+
+
+
+
+
+
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
+<script>
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if ($(this).scrollTop() > 100) {
@@ -342,28 +355,30 @@ function setMarkers(map) {
   }
 </script>
 </body>
+
 <script src="assets/js/action/actions.js?ver=1"></script>
 <script src="assets/js/action/refer.js?ver=1"></script>
-	<script src="assets/js/validate/jquery.js"></script>
-    <script src="assets/js/validate/jquery.validate.min.js"></script>
-	<script src="assets/js/validate.js?ver=1"></script>
-	<script src="assets/js/function.js?ver=1"></script>
+<!--<script src="assets/js/validate/jquery.js"></script>-->
+<script src="assets/js/validate/jquery.validate.min.js"></script>
+<script src="assets/js/validate.js?ver=1"></script>
+<script src="assets/js/function.js?ver=1"></script>
 
 
 
-	  <script  src="assets/js/chosen.jquery.js" type="text/javascript"></script>
+<script  src="assets/js/chosen.jquery.js" type="text/javascript"></script>
 
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script type="text/javascript">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
     var config = {
-      '.chosen-select'           : {},
-      '.chosen-select-deselect'  : {allow_single_deselect:true},
-      '.chosen-select-no-single' : {disable_search_threshold:10},
-      '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-      '.chosen-select-width'     : {width:"95%"}
+        '.chosen-select'           : {},
+        '.chosen-select-deselect'  : {allow_single_deselect:true},
+        '.chosen-select-no-single' : {disable_search_threshold:10},
+        '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+        '.chosen-select-width'     : {width:"95%"}
     }
     for (var selector in config) {
-      $(selector).chosen(config[selector]);
+        $(selector).chosen(config[selector]);
     }
-  </script>
+</script>
 
+<!-- Scripts -->

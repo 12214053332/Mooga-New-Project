@@ -4,7 +4,7 @@ $(document).ready(function() {
     /**
      * Bootstrap Select
      */
-    $('select').selectpicker();
+    //$('select').selectpicker();
 
     /**
      * Background image
@@ -100,7 +100,7 @@ $(document).ready(function() {
     /**
      * Colorbox
      */
-    $('.detail-gallery-preview a').colorbox();
+    //$('.detail-gallery-preview a').colorbox();
 
     /**
      * Detail gallery

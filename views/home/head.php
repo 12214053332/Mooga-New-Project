@@ -136,6 +136,13 @@
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css?ver=3.1">-->
 	<link rel="stylesheet" href="assets/js/chosen.css?ver=1">
+
+  <link rel="stylesheet" href="assets/css/animate.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/responsive_style.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/superlist.css" type="text/css">
+  <link rel="stylesheet" href="assets/js/owl.carousel/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="assets/js/colorbox/example1/colorbox.css" type="text/css">
 	<!--<link rel="stylesheet" href="assets/css/box.css">
 	 <style type="text/css" media="all">
     /* fix rtl for demo */
