@@ -1,5 +1,5 @@
 
-<div class="container" style="height:500px">
+<div class="container" >
     <div class="row">
 	 
         <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
@@ -58,6 +58,9 @@
 			</ul>
         <p class="grey-font md-font text-right " >  </p>
 	
+
+</div>
     </div>
 </div>
+
 
