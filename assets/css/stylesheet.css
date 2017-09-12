@@ -1124,7 +1124,7 @@ transform:scale(1.5)
 }
 .feature-title-item {
 	/*background: rgba(0, 0, 0, 0) linear-gradient(to right, rgba(0, 0, 0, 0.3) -10%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0.5) 40%, transparent 80%) repeat scroll 0 0*/
-	height:35px;
+	/*height:35px;*/
 }
 .feature-title-item img {
 	width: 100%;
@@ -1150,7 +1150,7 @@ transform:scale(1.5)
 	padding:15px;
 	text-align: right;
 	position:relative;
-	height: 200px;
+	/*height: 200px;*/
 }
 .feature-item-container-box .feature-item-location {
 	background: #f4f4f4;
@@ -1173,7 +1173,16 @@ transform:scale(1.5)
 .feature-item-container-box .feature-item-location h2 i {
 	color: #ffcc58;
 	font-size:14px;
-	margin-right: 3px;
+	margin-left: 6px;
+}
+.views{
+	float: right !important;
+}
+.offers_views{
+	float: left !important;
+}
+.grid{
+	width: 20% !important;
 }
 .feature-item-container-box .feature-item-location span {
 	float: right;
@@ -1451,10 +1460,10 @@ transform:scale(1.5)
 	border: 1px solid transparent;
 	border-top: none;
 }
-/*.recent-listing-box-container-item:hover .recent-listing-box-image img {*/
-	/*transform: scale(1.2);*/
-	/*transition: all 0.4s ease 0s;*/
-/*}*/
+.recent-listing-box-container-item:hover .recent-listing-box-image img {
+	transform: scale(1.2);
+	transition: all 0.4s ease 0s;
+}
 .recent-listing-box-container-item:hover .hover-overlay {
 	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
 }
@@ -1559,6 +1568,7 @@ transform:scale(1.5)
 .listing-boxes-text {
 	padding: 15px;
 	text-align: right;
+	height: 210px;
 }
 .recent-listing-box-item .recent-feature-item-rating {
 	background: #f4f4f4;
@@ -1596,7 +1606,7 @@ transform:scale(1.5)
 }
 .listing-boxes-text a h3 {
 	font-family: 'cocon','Open Sans', sans-serif;
-	color: #4a4a4a;	
+	color: #4a4a4a ;
 	font-size: 16px;
 	font-weight:700;
 	margin-top: 0;
@@ -1605,7 +1615,7 @@ transform:scale(1.5)
 .recent-listing-box-item .recent-feature-item-rating h2 i {
 	color: #ffcc58;
 	font-size:14px;
-	margin-right: 3px;
+	margin-left: 5px;
 }
 .listing-boxes-text p {
 	color: #7d7d7d;
@@ -1615,6 +1625,7 @@ transform:scale(1.5)
 	margin-bottom: 0;
 	margin-top: 10px;
 	letter-spacing:0.3px;
+	padding-top: 20px;
 }
 .listing-boxes-text a {
 	font-family: 'cocon','Open Sans', sans-serif;

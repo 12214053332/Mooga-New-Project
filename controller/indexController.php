@@ -29,7 +29,7 @@ public function index() {
 			  $userscounter =$this->registry->users->userscounter();
 			  $this->registry->template->userscounter= $userscounter;
 			  
-			  $result_project =$this->registry->users->getallprojects_search(' and IFNULL(projects.pending,0)=0 order by id desc LIMIT 6');
+			  $result_project =$this->registry->users->getallprojects_search(' and IFNULL(projects.pending,0)=0 order by id desc LIMIT 8');
 			  $this->registry->template->homeprojects= $result_project;
 			  
 			  $homeopportunities =$this->registry->users->getallopportunities('order by id desc LIMIT 6');
@@ -43,7 +43,8 @@ public function index() {
 			  
 			  $slider_articles =$this->registry->articles->get_home_articles(5);
 			  $this->registry->template->slider_articles= $slider_articles;
-			  
+			  $project_types=$this->registry->users->getproject_fields();
+    			$this->registry->template->project_types= $project_types;
 
 			$facebook=new StdClass();
 		   $facebook->image='assets/uploads/homepage.png';

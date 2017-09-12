@@ -34,7 +34,7 @@
                               </select>
                           </div>
                           <div class="form-group">
-                              <select class="form-control chosen-select" data-placeholder="اختر مجال عمل المشروع"   id="project_field" name="project_field"  <?php  echo $object->project_field_list; ?>>
+                              <select class="form-control chosen-select" data-placeholder="اختر مجال عمل المشروع"   id="project_field" name="project_field"  <?php  echo $project->project_field_list; ?>>
                                   <option value=""></option>
                                   <?php $helper->getoptions( $project_field,""); ?>
 

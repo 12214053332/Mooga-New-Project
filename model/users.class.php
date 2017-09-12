@@ -1335,8 +1335,27 @@ INNER JOIN users on users.id=projects.user_id
      
         
     }
-	
-	
+
+    public static function getproject_fields() {
+        $project_fields = array();
+        $query = "select id,name from project_field LIMIT 10";
+
+        $result = self::execquery($query);
+        if ($result) {
+
+            while ($obj = $result->fetch_object()) {
+
+                $element =
+				array(
+                    'name' => $obj->name,
+
+					);
+                array_push($project_fields,  $element);
+            }
+        }
+
+        return $project_fields;
+    }
 	
 	public static function getalloffers_search($condition="") {
 	

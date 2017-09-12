@@ -171,7 +171,9 @@
 
 
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGW7BhmuieacNzMGqbq0Kow-ryarc-KtY&callback=initMap"
+        type="text/javascript"></script>
 <script>
 $(document).ready(function(){
 	$(window).scroll(function(){
@@ -324,7 +326,7 @@ function setMarkers(map) {
 	for (var i = 0; i < item_location.length; i++) {
 		var item = item_location[i];
 		var image = {
-		  url: 'images/'+item[6],
+		  url: 'assets/images/'+item[6],
 
 		  size: new google.maps.Size(61, 72),
 
