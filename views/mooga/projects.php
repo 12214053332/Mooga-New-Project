@@ -19,9 +19,9 @@
                         <a href="?page=addproject" class="btn btn-success btn-block <?php if(in_array($currentpage,['projects'])) { ?>pull-right<?php }else{?>text-center<?php }?>"><span>أضف مشروع جديد</span></a>
                         <div class="clearfix"></div>
                         <div class="clearfix" style="height: 20px;"></div>
-                      <form id="allprojects-form" onsubmit="return false" method="post" action="#" novalidate="novalidate">
-                          <div class="news-search-lt">
-                              <input class="form-control" id="name" placeholder="اسم المشروع او وصف المشروع" type="text">
+                      <form id="<?php echo $form;?>projects-form" onsubmit="return false" method="post" action="#" novalidate="novalidate">
+                          <div class=" form-group news-search-lt">
+                              <input class="form-control valid" id="name"  name="name" placeholder="اسم المشروع او وصف المشروع" value="<?php echo $search ?>" type="text">
                           <span class="input-search">
                               <i class="fa fa-search"></i>
                           </span>
@@ -52,6 +52,8 @@
                                   <?php
                                   foreach ($countries as $country) {
                                       $id=$country['id'];
+
+
                                       $name=$country['name'];
                                       $code=$country['code'];
                                       echo " <option value='$id'  data-code='$code' >$name</option> ";
@@ -77,9 +79,13 @@
                           </div>
 
                           <div class="from-list-lt text-center">
-                              <button type="submit" class="btn">إبحث</button>
+                              <button type="submit" class="btn">إبحث</
+                              button>
                           </div>
                       </form>
+
+
+
 
                       <div class="clearfix"></div>
                       <div class="clearfix" style="height: 20px;"></div>
@@ -136,13 +142,13 @@
                   <div class="col-md-9 col-sm-8 col-xs-12 nopadding">
                       <div class="col-md-12 col-sm-12 col-xs-12">
                           <div class="sorts-by-results">
-                              <div class="col-md-6 col-sm-6 col-xs-6">
-                                  <!--<span class="result-item-view">
-                                      Your Search Returned
-                                      <span class="yellow">16</span>
-                                      Results
-                                  </span>-->
-                              </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+<!--                                  <span class="result-item-view">-->
+<!--                                      نتيجة البحث-->
+<!--                                      <span class="yellow">--><?php //echo count($projects)?><!--</span>-->
+<!--                                      مشروع-->
+<!--                                  </span>-->
+                            </div>
                               <div class="col-md-6 col-sm-6 col-xs-6">
                                   <div class="disp-f-right">
                                       <div class="disp-style"><a href="listing_grid.html"><i class="fa fa-th"></i></a></div>

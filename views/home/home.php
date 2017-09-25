@@ -1,5 +1,6 @@
 
 <div id="location-map-block">
+
     <div id="location-homemap-block"></div>
     <div class="container">
         <div class="row">
@@ -20,32 +21,25 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
                 </div>
                 <div id="search-categorie-item-block">
-                    <form id="categorie-search-form">
+                    <form    method="post" action="?page=projects" novalidate="novalidate">
                         <h1>search any business listing</h1>
                         <div class="col-sm-9 col-md-10 nopadding">
                             <div id="search-input">
-                                <div class="col-sm-3 nopadding">
-                                    <select id="location-search-list" class="form-control">
-                                        <option>All Categories</option>
-                                        <option>Business</option>
-                                        <option>Free Lancing</option>
-                                        <option>Web Development</option>
-                                        <option>Web Designing</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-9 nopadding">
+
+                                <div class="col-sm-12 nopadding">
                                     <div class="form-group">
-                                        <input id="location-search-data-store" class="form-control" name="search" placeholder="Enter Keyword" required>
+                                        <input id="location-search-data-store name" class="form-control valid"  name="name" placeholder="اسم المشروع او وصف المشروع" required>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-3 col-md-2 text-right nopadding-right">
                             <div id="location-search-btn">
-                                <button type="submit" id="search-btn"><i class="fa fa-search"></i>Search</button>
+                                <button type="submit"  class="btn"><i class="fa fa-search"></i>Search</button>
                             </div>
                         </div>
                     </form>
+
                 </div>
                 <div id="location_slider_item_block">
                     <button id="map_mark"><i class="fa fa-map-marker"></i></button>
@@ -55,6 +49,7 @@
     </div>
 </div>
 <div id="search-categorie-item">
+    
     <div class="container">
         <div class="row">
             <div class="col-sm-12 text-center">
@@ -76,7 +71,7 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <div class="col-md-12 feature-item-listing-heading bt_heading_3">
-                    <h1>Featured <span>Listing</span></h1>
+                    <h1>أحدث <span>المشروعات</span></h1>
                     <div class="blind line_1"></div>
                     <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
                     <div class="blind line_2"></div>
@@ -161,22 +156,22 @@
     </div>
 
 </div>
-<div id="recent-product-item-listing">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 text-center">
-                <div class="col-md-12 recent-item-listing-heading bt_heading_3">
-                    <h1>Recent <span>Listing</span></h1>
-                    <div class="blind line_1"></div>
-                    <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>
-                    <div class="blind line_2"></div>
-                </div>
-                <div class="row">
-                    <?php include('views/mooga/wedget/homeoffers.php'); ?>
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--<div id="recent-product-item-listing">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-sm-12 text-center">-->
+<!--                <div class="col-md-12 recent-item-listing-heading bt_heading_3">-->
+<!--                    <h1>أحدث <span>العروض</span></h1>-->
+<!--                    <div class="blind line_1"></div>-->
+<!--                    <div class="flipInX-1 blind icon"><span class="icon"><i class="fa fa-stop"></i>&nbsp;&nbsp;<i class="fa fa-stop"></i></span></div>-->
+<!--                    <div class="blind line_2"></div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    --><?php //include('views/mooga/wedget/homeoffers.php'); ?>
+<!---->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->

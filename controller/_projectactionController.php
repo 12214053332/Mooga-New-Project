@@ -96,6 +96,7 @@ Class _projectactionController Extends baseController {
 			$phone=	$this->registry->users->getprojectownerphone($project_id,$user_id);
 			if ($phone!=""){
 				echo $phone;}
+
 			else{
 				echo "";
 			}

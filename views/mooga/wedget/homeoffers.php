@@ -26,7 +26,8 @@
                                                <h3> <?php echo $helper->__html( $offer->item_type_name.','.$offer->item_names_name,30,array('html' => true)); ?>
                                        </h3></a>
 
-                                        <p> <?php echo $helper->__html($offer->description,150,array('html' => true));  ?></p>
+                                        <p> <?php echo $helper->__html($offer->description,150,array('html' => true));  ?>
+                                            <a href="?page=singleoffer&pid=<?php echo $offer->id  ?>">المزيد</a></p>
                                     </div>
                                     <div class="recent-feature-item-rating">
                                         <h2><i class="fa fa-map-marker"></i><?php echo  $offer->offer_country; ?></h2>

@@ -26,8 +26,7 @@
                       <a href="?page=addoffer" class="btn btn-success btn-block <?php if(in_array($currentpage,['projects'])) { ?>pull-right<?php }else{?>text-center<?php }?>"><span>أضف عرض جملة جديد</span></a>
                       <div class="clearfix"></div>
                       <div class="clearfix" style="height: 20px;"></div>
-
-                      <form method="post"  action="#" id="<?php echo $form;?>offers-form">
+                      <form onsubmit="return false" method="post" action="#" novalidate="novalidate" id="<?php echo $form;?>offers-form">
                       <div class="news-search-lt">
                           <input class="form-control" placeholder="وصف عرض الجملة" type="text">
                           <span class="input-search"> <i class="fa fa-search"></i> </span>
@@ -134,11 +133,11 @@
                   <div class="col-md-9 col-sm-8 col-xs-12">
                       <div class="sorts-by-results">
                           <div class="col-md-6 col-sm-6 col-xs-6">
-                              <!--<span class="result-item-view">
-                                  Your Search Returned
-                                  <span class="yellow">16</span>
-                                  Results
-                              </span>-->
+<!--                              <span class="result-item-view">-->
+<!--                                  نتيجة البحث-->
+<!--                                  <span class="yellow">--><?php //echo count($offers)?><!--</span>-->
+<!--                                  عرض-->
+<!--                              </span>-->
                           </div>
                           <div class="col-md-6 col-sm-6 col-xs-6">
                               <div class="disp-f-right">
@@ -176,7 +175,7 @@ $(window).scroll(function() {
     if($(window).scrollTop() >= ($(document).height() - $(window).height())-700  ) {
           
 			$('#mySpinner').addClass('spinner');
-	     	lazy_<?php echo $form;?>offerssearch();	
+	     	lazy_<?php echo $form;?>offerssearch();
     }
 });
 

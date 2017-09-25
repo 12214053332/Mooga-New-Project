@@ -24,7 +24,7 @@
             <li><a href="?page=index"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp; الصفحة الرئيسية</a></li>
             <li><a href="?page=projects"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp; المشروعات</a></li>
             <li><a href="?page=investment"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp; إستثمار</a></li>
-            <li><a href="?page=offers"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;عروض الجملة</a></li>
+<!--            <li><a href="?page=offers"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;عروض الجملة</a></li>-->
             <!--<li><a href="?page=articles"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;المقالات</a></li>-->
             <li><a href="?page=aboutus"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;من نحن</a></li>
             <li><a href="?page=contactus"><i class="fa fa-hand-o-left"></i>&nbsp;&nbsp;اتصل بنا</a></li>
@@ -159,11 +159,12 @@
 <script type="text/javascript" src="assets/js/wow.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery_custom.js"></script>
+<script type="text/javascript" src="assets/js/jquery_counterup.js"></script>
 <script type="text/javascript" src="assets/js/colorbox/jquery.colorbox-min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap-select/bootstrap-select.min.js"></script>
 <script type="text/javascript" src="assets/js/owl.carousel/owl.carousel.js"></script>
 <script type="text/javascript" src="assets/js/waypoints.js"></script>
-<script type="text/javascript" src="assets/js/jquery_counterup.js"></script>
+
 <script type="text/javascript" src="assets/js/superlist.js"></script>
 
 

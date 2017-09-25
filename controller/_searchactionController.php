@@ -136,7 +136,7 @@ Class _searchactionController Extends baseController {
 			   $lastprojectid=post('lastprojectid');
 			   if ($lastprojectid!=""){$lastprojectid=$this->registry->encryption->decode($lastprojectid);}
 
-			   
+
 
 			  $condition="";
 			  $condition=$condition." and user_id=$user_id";
@@ -197,7 +197,6 @@ Class _searchactionController Extends baseController {
 
 			  if ($item_brand!=""){$condition=$condition." and (offers.item_brand  like N'%$item_brand%'  )" ;}
 			  if ($item_type!=""){$condition=$condition." and (offers.item_type  like N'%$item_type%'  )" ;}
-			
 			  if ($country!=""){$condition=$condition." and offers.country in (" . $country .")" ;}
 			    if ($states!=""){$condition=$condition." and offers.states in (" . $states .")" ;}
 				  if ($cities!=""){$condition=$condition." and offers.cities in (" . $cities .")" ;}

@@ -5,6 +5,7 @@ Class articlesController Extends baseController {
 public function index() 
 {         
  //$this->checkuser();
+    header('Location: ?page=index');
 		$result =$this->registry->articles->getarticles_category();
 	    $this->registry->template->allarticles_cat= $result;
 		

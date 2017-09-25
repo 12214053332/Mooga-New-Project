@@ -185,7 +185,6 @@ class users extends db {
         $id = self::execquery_id($query);
         return $id;
     } 
-  
 
       public static function insertresetpassword($email) {
         
@@ -1347,6 +1346,7 @@ INNER JOIN users on users.id=projects.user_id
 
                 $element =
 				array(
+				    'id'=> $obj->id,
                     'name' => $obj->name,
 
 					);
@@ -1355,6 +1355,25 @@ INNER JOIN users on users.id=projects.user_id
         }
 
         return $project_fields;
+    }
+    public static function getproject_field_type($id) {
+        $project_field = array();
+        $query = "select name from project_field where id='$id'";
+        $element ='';
+
+        $result = self::execquery($query);
+
+        if ($result) {
+
+            while ($obj = $result->fetch_object()) {
+
+                $element =$obj->name;
+
+
+            }
+        }
+
+        return $element;
     }
 	
 	public static function getalloffers_search($condition="") {
@@ -1370,11 +1389,12 @@ INNER JOIN users on users.id=projects.user_id
 			LEFT JOIN item_names on item_names.id=offers.name
 						LEFT JOIN  country as country2 on country2.id=offers.country 
 								 where 1 and IFNULL(offers.deleted,0)=0 ".$condition ;
-	//echo  ($query) ;
+//	echo  ($query) ;
 	
 	
       
         $result = self::execquery($query);
+
         if ($result) {
 
             while ($obj = $result->fetch_object()) {
@@ -1484,8 +1504,9 @@ INNER JOIN users on users.id=projects.user_id
 								 LEFT JOIN  country on country.id=users.country
 						LEFT JOIN  country as country2 on country2.id=projects.country
 								 where 1 and IFNULL(projects.deleted,0)=0   ".$condition ;
-	//echo  ($query) ;
+
         $result = self::execquery($query);
+
         if ($result) {
 
             while ($obj = $result->fetch_object()) {
@@ -1502,6 +1523,7 @@ INNER JOIN users on users.id=projects.user_id
 					'project_type_list' => str_replace('"','',$obj->project_type_list) ,
 					'project_field_list' => str_replace('"','',$obj->project_field_list),
 					'username' => $obj->username,
+					'ads_expireddate'=>$obj->ads_expireddate,
 					'profilepic' => $obj->profilepic,
 					'userid' => self::$encryption->encode($obj->userid),
 					'done' => $obj->done,
@@ -1795,7 +1817,7 @@ public static function  addofferviewlog($offer_id)
                                     <p class='black-font sm-font text-center bold zero-bottom-margin'>
 							           <a class='show-phone' href='mailto:$email'>$email</a></p>
                                 </div>"
-									   ;
+                              ;
 						   }else
 						   {
 							   $string=  "<p class='black-font sm-font text-center bold zero-bottom-margin show-phone'>
@@ -2888,6 +2910,22 @@ public static function  addofferviewlog($offer_id)
             while ($obj = $result->fetch_object()) {
 
                 $element = array('code' => $obj->code,
+                    'name' => $obj->name);
+                array_push($allcountry, $element);
+            }
+        }
+
+        return $allcountry;
+    }
+    public static function getallcountry_search($search) {
+        $allcountry = array();
+        $query = "select name  from country where name like N'%$search%' order by id";
+        $result = self::execquery($query);
+        if ($result) {
+
+            while ($obj = $result->fetch_object()) {
+
+                $element = array(
                     'name' => $obj->name);
                 array_push($allcountry, $element);
             }

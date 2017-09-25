@@ -25,8 +25,9 @@ public function index() {
 			  
 			  $result =$this->registry->users->getallprojects_search('and projects.needclose=1 LIMIT 4');
 			  $this->registry->template->projectcolsed= $result;
-			  
-			  $userscounter =$this->registry->users->userscounter();
+    $this->registry->template->project_field=json_encode ($this->registry->helper->getproject_field());
+
+    $userscounter =$this->registry->users->userscounter();
 			  $this->registry->template->userscounter= $userscounter;
 			  
 			  $result_project =$this->registry->users->getallprojects_search(' and IFNULL(projects.pending,0)=0 order by id desc LIMIT 8');
@@ -43,8 +44,8 @@ public function index() {
 			  
 			  $slider_articles =$this->registry->articles->get_home_articles(5);
 			  $this->registry->template->slider_articles= $slider_articles;
-			  $project_types=$this->registry->users->getproject_fields();
-    			$this->registry->template->project_types= $project_types;
+			  $project_fields=$this->registry->users->getproject_fields();
+    			$this->registry->template->project_fields= $project_fields;
 
 			$facebook=new StdClass();
 		   $facebook->image='assets/uploads/homepage.png';
@@ -56,6 +57,8 @@ public function index() {
 			  
            /*}*/
 }
+
+
 
 }
 

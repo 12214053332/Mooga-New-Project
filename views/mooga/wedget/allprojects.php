@@ -21,7 +21,7 @@
                             </div>
                             <div class="col-md-8 col-sm-12 nopadding">
                                 <div class="recent-listing-box-item">
-                                    <div class="listing-boxes-text">
+                                    <div class="listing-boxes-text " >
                                         <a href="?page=singleproject&pid=<?php  echo $project->id;?>">
                                             <h3><?php echo $project->name;?></h3>
                                         </a>
@@ -30,7 +30,11 @@
                                         </div>-->
 
 
-                                        <p><?php  echo $helper->__html($project->description,150,array('html' => true, 'ending' => '')).'....'; ?></p>
+                                        <p><?php  echo $helper->__html($project->description,150,array('html' => true, 'ending' => '')).'....'; ?>
+                                            <a href="?page=singleproject&pid=<?php  echo $project->id;?>">المزيد</a></p>
+
+<!--                                       --><?php //if ($project->ads_expireddate!=null){?><!--<a class="btn btn-success btn-block" href="?page=newmessage&pid=--><?php //$project->id ?><!--"> تفاصيل الاعلان</a>--><?php //} ?>
+
                                     </div>
                                     <div class="recent-feature-item-rating">
                                         <h2><i class="fa fa-map-marker"></i> <?php echo $project->project_country;?></h2>

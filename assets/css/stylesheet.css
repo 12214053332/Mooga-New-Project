@@ -1181,8 +1181,11 @@ transform:scale(1.5)
 .offers_views{
 	float: left !important;
 }
-.grid{
-	width: 20% !important;
+@media (min-width: 992px){
+	.col-md-3.grid{
+		width: 20% !important;
+	}
+
 }
 .feature-item-container-box .feature-item-location span {
 	float: right;
@@ -1656,7 +1659,11 @@ transform:scale(1.5)
 	border: 5px solid #ffce10;
 	box-shadow:0 12px 10px rgba(0, 0, 0, 0.25);
 	margin-bottom: 30px;
+	margin: 15px auto;
 
+}
+.btn_item{
+	float: left;
 }
 .vfx-item-counter-up .count_number {
 	font-family: 'cocon','Open Sans', sans-serif;
@@ -1681,6 +1688,7 @@ transform:scale(1.5)
 	line-height: 50px;
 	color: #ffce10
 }
+
 /*********************** pricing plan **********************/
 #pricing-item-block {
 	background: #f2f2f2;
@@ -1706,10 +1714,11 @@ transform:scale(1.5)
 	color: #ffce10;
 }
 .price-table-feature-block {
-	padding: 35px 0px;
+	padding: 8px 0px;
 	background: #ffffff;
 	border: 1px solid #ebebeb;
 	position: relative;
+	margin-top: 16px;
 }
 .price-table-feature-block.active {
 	box-shadow: -2px 5px 15px 7px #e2e2e2;
@@ -1731,11 +1740,12 @@ transform:scale(1.5)
 }
 .price-table-feature-block h1 {
 	font-family: 'cocon','Open Sans', sans-serif;
-	margin: 0px;
+	margin-right: 20px;
 	color: #4a4a4a;
 	font-size: 18px;
 	font-weight: 600;
 	text-transform: uppercase;
+	margin-top: 15px;
 }
 .price-table-feature-block > hr {
 	width: 90px;
@@ -1746,11 +1756,21 @@ transform:scale(1.5)
 	color: #999999;
 	font-size: 15px;
 	font-weight:500;
+	padding-top: 20px !important;
 	padding: 0px 40px;
 }
+.desc{
+    min-height: 300px !important;
+}
+ .description{
+     float: left;
+	 padding: 0px 40px;
+     width: 40%;
+ }
 .price-table-feature-block p span {
 	color: #ffce10;
 }
+
 .vfx-price-list-item {
 	display: block;
 	width: auto;
@@ -2325,7 +2345,7 @@ ul.use-slt-link li {
 }
 .footer-top {
 	background: rgba(30, 30, 30, 0.98);
-	padding: 80px 0 70px;
+	padding: 30px 0 0;
 }
 .footer-top h2 {
 	font-family:'cocon','Raleway', sans-serif;
@@ -2358,7 +2378,7 @@ ul.use-slt-link li {
 	background-color: #191919;
 	font-size: 0.875rem;
 	border-top: 1px solid #353535;
-	padding: 30px 0;
+	padding: 5px 0;
 	position: relative;
 }
 .footer-bottom p {
@@ -2381,14 +2401,19 @@ ul.use-slt-link li {
 	text-indent: -9999px;
 	width: 40px;
 }
+.hr{
+	position: absolute !important;
+	margin-right: 20px !important;
+}
 /******************* breadcrum ***********************/
 #breadcrum-inner-block {
-	padding: 85px 0px;
+	padding: 45px 0px;
 	background: url(../images/listing-detail.jpg) center top no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-size: 100% auto;
 }
+
 .breadcrum-inner-header {
 	text-align: right;
 	padding-right: 20px;
@@ -2480,7 +2505,7 @@ p.inner-secon-tl {
 /******************************* featured service block **************************************/
 #featured-service-block {
 	background: #f2f2f2;
-	padding: 80px 0 60px 0;
+	padding: 25px 0 60px 0;
 	border-top: 1px solid #e4e4e4;
 }
 .service-item-fearured {
@@ -3357,12 +3382,12 @@ ul.vfx-pagination li.active a, ul.vfx-pagination li:hover a {
 	padding-left: 0;
 }
 .detail-content .detail-amenities li {
-	width: 31%;
+	width: 23% !important;
 	font-size: 14px;
 }
-/*.dlt-title-item ul li span{*/
-	/*color: #ffbe00 !important;*/
-/*}*/
+.dlt-title-item ul li span{
+	color: #ffbe00 !important;
+}
 .detail-content .detail-amenities li.yes::before {
 	background-color: #ffbe00;
 	border-color: #ffbe00;
@@ -3394,7 +3419,9 @@ ul.vfx-pagination li.active a, ul.vfx-pagination li:hover a {
 	margin-right: 10px;
 }
 .dlt-title-item {
+	margin-top: 16px;
 	margin-bottom: 25px;
+	padding:0px 15px;
 }
 .dlt-title-item h2 {
 	color: #4a4a4a;
@@ -3430,8 +3457,8 @@ ul.vfx-pagination li.active a, ul.vfx-pagination li:hover a {
 	margin-bottom: 30px;
 }
 .dlt-title-item ul li {
-	list-style-image: url(../images/ic_right.png);
-	list-style-position: inside;
+	/*list-style-image: url(../images/ic_right.png);*/
+	/*list-style-position: inside;*/
 	color: #696969;
 	font-size: 14px;
 	font-weight: 500;
@@ -3482,12 +3509,10 @@ ul.vfx-pagination li.active a, ul.vfx-pagination li:hover a {
 	width: 150px;
 }
 .dlt-com-lt-img {
-	display: block;
-	float: left;
-	margin-right: 20px;
+	margin-left: 20px;
 }
 .dlt-com-lt-img .social-icons {
-	margin: 15px auto 0;
+	margin: 20px auto 0;
 	text-align: center;
 }
 .social-icons li {
@@ -5282,3 +5307,4 @@ div.error-page-alt {
 	top: 0;
 	width: 34px;
 }
+/*search bar home page*/

@@ -3,8 +3,9 @@
 Class myprojectsController Extends baseController {
 
 public function index() 
-{      
-
+{
+    $search=post('name');
+    $this->registry->template->search=$search;
 		        $this->checkuser();
 				
 		$user_id=$this->getuserid();

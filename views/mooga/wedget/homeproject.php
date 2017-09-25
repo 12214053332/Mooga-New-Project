@@ -17,10 +17,11 @@
                                 </div>
                             </div>
                             <div class="feature-box-text">
-                                <h3><a href=href="?page=singleproject&pid=<?php echo $projects->id  ?>">
+                                <h3><a href="?page=singleproject&pid=<?php echo $projects->id  ?>">
                                         <?php echo $helper->__html($projects->name,30,array('html' => true)); ?>
                                     </a></h3>
-                                <p> <?php echo $helper->__html($projects->description,100,array('html' => true));  ?></p>
+                                <p> <?php echo $helper->__html($projects->description,100,array('html' => true));  ?>
+                                    <a href="?page=singleproject&pid=<?php  echo $projects->id;?>">المزيد</a></p>
                             </div>
                             <div class="feature-item-location">
                                 <h2><i class="fa fa-map-marker"></i><?php echo $projects->project_country; ?></h2>
